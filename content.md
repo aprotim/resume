@@ -46,9 +46,9 @@ Experience
 - Provided SRE support for Google's in-house SSO system, including monitoring, alerting, and deployment support.
 
 ### Google Inc. - *Sysops Intern* - June 2006 - August 2006
-- *Migrated Googler Calandars from Oracle Calendar to Google Calendar*
+- **Migrated Googler Calandars from Oracle Calendar to Google Calendar**
 	- In advance of Google's initial release of Google Calendar for enterprise and to aid with internal dogfooding, I wrote all the tools to export all employee calendar data from Oracle Calandar and import it into Google Calendar.
-- *Global logs visualization*
+- **Global logs visualization**
 	- Used a combination of Sawzall and Python to analyze and geolocate logs data from internal infrastructure and visualize the magnitude of internal traffic onto Google Earth using dynamically rendered KML.
 
 Skills
