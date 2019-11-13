@@ -78,10 +78,10 @@ Education
 
 ### University of Virginia, Dept of Computer Science
 #### M.S. in Computer Science - Jan 2008
-Thesis: **“Color CT: Capturing Energy Dependence in CT Scans”**
+Thesis: **“Color CT: Capturing Energy Dependence in CT Scans”**  
 Publications: Williams, Daniel, et al. **"A cross-layer approach to heterogeneity and reliability."** *Proceedings of the 7th IEEE/ACM international conference on Formal Methods and Models for Codesign.* IEEE Press, 2009.
 
 ### University of Virginia, School of Engineering & Applied Science
 #### B.S. with Honors in Computer Science - May 2005<br/> Also completed requirements for B.A. in Cognitive Science
-Thesis: **“NJTopol: Adding Topology to Parallelized Neural Simulation”**
+Thesis: **“NJTopol: Adding Topology to Parallelized Neural Simulation”**  
 Publications: Levy, William B., et al. **"The formation of neural codes in the hippocampus: trace conditioning as a prototypical paradigm for studying the random recoding hypothesis."** *Biological cybernetics* 92.6 (2005): 409-426.
