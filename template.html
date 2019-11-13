@@ -35,6 +35,12 @@
 					--bolder-color: var(--base03);
 					--boldest-color: var(--base03);
 				}
+				
+				
+				.ui {
+					display: none;
+				}
+
 
 			}
 			@media screen {
@@ -357,5 +363,34 @@
 		<p>
 			Thesis: <strong>“NJTopol: Adding Topology to Parallelized Neural Simulation”</strong> Publications: Levy, William B., et al. <strong>"The formation of neural codes in the hippocampus: trace conditioning as a prototypical paradigm for studying the random recoding hypothesis."</strong> <em>Biological cybernetics</em> 92.6 (2005): 409-426.
 		</p>
+	<script>
+	let body = document.getElementsByTagName('body')[0];
+	if (window.matchMedia("screen and (prefers-color-scheme: dark)").matches) {
+		body.classList.add("dark");
+	}
+
+	function toggleDark() {
+		body.classList.toggle("dark");
+	}
+
+	let toggleBox = document.createElement('div');
+	toggleBox.style.position = "relative";
+	toggleBox.style.top = "0";
+	toggleBox.classList.add('ui');
+
+	let toggleLink = document.createElement('a');
+	toggleLink.href = "#";
+	toggleLink.addEventListener('click', toggleDark);
+	toggleLink.innerText = "Toggle Dark Mode";
+	toggleLink.style.position = "absolute";
+	toggleLink.style.right = "0";
+	toggleLink.style.backgroundColor = 'var(--bg-highlights)';
+	toggleLink.style.padding = "5px";
+
+	toggleBox.appendChild(toggleLink);
+	body.insertBefore(toggleBox, body.children[0]);
+
+  </script>
+
 	</body>
 </html>
