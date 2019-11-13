@@ -3,7 +3,7 @@
 jobs@aprotim.com  
 (310) 243-6230
 
-Experience
+Employment
 ------------
 ### Google, Inc. - *Site Reliability Engineer - February 2008 - Present*
 
@@ -16,12 +16,6 @@ Experience
    * **Push for upstream features** in Google Cloud Storage by speccing requirements, coordinating changes, and finding headcount from internal initiatives.
    * **Capture user requirements** by working closely with alpha-/beta-testers to capture pain points, hard requirements, and wishlist features.
    * **Conform to security best practices**, seeking input from security team and building out features as needed to help users avoid security pitfalls.
-   
-#### CSSI Lead Instructor - Summer 2018/2019
-* **Taught three-week intensive course in programming** to rising college students.
-	- Taught 30+ students, primarily from backgrounds underrepresented in tech. XX% of students reported more likely to pursue a course of study in CS and XX% reported increased confidence in their technical ability.
-	- Planned and delivered lessons on both technical topics and life skills.
-	- Recruited a diverse team of module instructors from the other engineers in the office, so that the students would see themselves reflected in their instructors.
 
 #### Enterprise Data Storage - Individual Contributor - (2014 - Present)
 * Migrated XX,000 long-term storage images from deprecated tape system onto cloud storage, including integrity checking and modifying the in-house-built backups management system.
@@ -41,6 +35,7 @@ Experience
 - Set policy for access to former user data, in line with established privacy/authorization practices within the company.
 - Maintained and improved internal tool providing delegated, logged administrative access to internal helpdesk, including managing quota and access to orphaned data.
 - Met in person with various GSuite teams (Calendar, Admin Console, Gmail, Docs, etc.) PMs to provide feedback on missing features and requirements for enterprise use cases, and helped steer roadmaps.
+- Worked with GSuite team to **roll out Google multi-login**, including both managing the google.com domain changes and consulting on requirements for the feature's roll out. For this work, I received an **OC Award Honorable Mention**.
 
 #### Single Sign-On SRE "Tech Lead" (Team of 1)
 - Provided SRE support for Google's in-house SSO system, including monitoring, alerting, and deployment support.
@@ -50,6 +45,31 @@ Experience
 	- In advance of Google's initial release of Google Calendar for enterprise and to aid with internal dogfooding, I wrote all the tools to export all employee calendar data from Oracle Calendar and import it into Google Calendar.
 - **Global logs visualization**
 	- Used a combination of Sawzall and Python to analyze and geolocate logs data from internal infrastructure and visualize the magnitude of internal traffic onto Google Earth using dynamically rendered KML.
+
+Volunteering/Service
+--------------------
+   
+### CSSI@Google
+
+[CSSI](https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/) is a three-week intensive course in programming for rising college freshman the summer before they start college. Students are primarily from groups underrepresented in tech. In the last week of the course, students design, implement, and present their own web app.
+
+#### Co-Lead Instructor - Summer 2018/2019
+- **Ran Google L.A.'s CSSI instruction**, along with my co-lead.
+	- **Planned and delivered lessons** on both technical topics and life skills, including detailed instruction on Python, ad hoc breakout sessions, growth vs. fixed mindset, reviews, and custom labs beyond the standard CSSI curriculum to adapt to the students' needs.
+	- **Recruited a diverse team of module instructors and TAs** from the other engineers in the office, so that the students would see themselves reflected in their instructors.
+	- **Led instructional/pedagogical training** for module instructors and TAs.
+	- Provided **personalized mentorship** to students.
+	- Students gave me **4.9/5.0 rating** as an instructor in the end-of-program survey.
+- In 2019, **100% of our students reported seeing themselves graduating with a CS degree**, **91% reported increased sense of belonging** in the field, and **85% said the program helped prepare them for college**.
+
+#### Python Module Instructor - Summer 2017
+- **Planned and taught** two full-day (9am-6pm) lessons on Python to the students, as well TAing frequently.
+
+### Meals on Wheels
+
+#### Delivery Driver 2011-2018
+
+- Delivered meals to those with mobility once every seven weeks.
 
 Skills
 ------
