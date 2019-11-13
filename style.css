@@ -30,6 +30,12 @@
 		--bolder-color: var(--base03);
 		--boldest-color: var(--base03);	
 	}
+	
+	.ui {
+		display: none;
+	}
+
+
 }
 @media screen {
 	html {
