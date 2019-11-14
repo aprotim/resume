@@ -35,8 +35,8 @@
 					--bolder-color: var(--base03);
 					--boldest-color: var(--base03);
 				}
-				
-				
+
+
 				.ui {
 					display: none;
 				}
@@ -70,14 +70,19 @@
 				}
 
 			}
-			h2 b, h2 strong {
+			h1 b, h1 strong, h2 b, h2 strong, h3 b, h3 strong {
 				font-weight: bolder;
+				border-bottom: 1px var(--secondary-color) dotted;
+
 			}
 			b, strong {
 				color: var(--bolder-color);
 			}
 			em, i {
 				color: var(--secondary-color);
+			}
+			h1 em, h1 i, h2 em, h2 i, h3 em, h3 i {
+				color: var(--bolder-color);
 			}
 			body {
 				color: var(--bold-color);
@@ -113,7 +118,6 @@
 			h4 {
 				color: var(--bolder-color);
 				font-size: 10pt;
-				font-style: italic;
 			}
 			h5 {
 				color: var(--bold-color);
