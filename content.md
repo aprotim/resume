@@ -5,9 +5,9 @@ jobs@aprotim.com
 
 Employment
 ------------
-### Google, Inc. - *Site Reliability Engineer - February 2008 - Present*
+### Google, Inc. - **Site Reliability Engineer** - *February 2008 - Present*
 
-#### Backups Tech Lead - Enterprise Data Storage - (2017-Present)
+#### Backups Tech Lead - Enterprise Data Storage - *(2017-Present)*
 * **Designed Google’s next gen internal backup tool** from the ground up.
    * Built on **Google Cloud Platform** to manage provisioning of storage, storage class migration, data retention, authentication/authorization, key escrow, and encryption.
    * Made setup and restore **self-service**, leading to happier users and less toil on the team.
@@ -17,18 +17,18 @@ Employment
    * **Capture user requirements** by working closely with alpha-/beta-testers to capture pain points, hard requirements, and wishlist features.
    * **Conform to security best practices**, seeking input from security team and building out features as needed to help users avoid security pitfalls.
 
-#### Enterprise Data Storage - Individual Contributor - (2014 - Present)
+#### Enterprise Data Storage - Individual Contributor - *(2014 - Present)*
 * **Migrated XX,000 long-term storage images** from deprecated tape system onto cloud storage, including integrity checking and modifying our backups management software.
-* Worked on tooling to **manage a fleet of several hundred NetApp filers, providing more SRE-like control planes**. (We needed cattle, NetApp designed pets.)
+* Worked on tooling to **manage a fleet of several hundred NetApp filers, providing more SRE-like control planes**. *(We needed cattle, NetApp designed pets.)*
 
-#### Enterprise Monitoring - Individual Contributor
+#### Enterprise Monitoring - Individual Contributor *(2010 - 2014)*
 * **Managed monitoring infrastructure** for Google’s internal (“corp”) systems. (As a hard dependency of critical infrastructure our availability SLOs had to be greater than any dependent system like internal DNS, DHCP, auth, etc.)
 * **Adapted tooling designed for the Google production stack** to run on standard Linux servers both in data centers and offices.
-* **Replaced previous, high-toil on-prem system management** with automatic workload scheduling. (Think proto-containerization with Linux VMs for specialized workloads.)
+* **Replaced previous, high-toil on-prem system management** with automatic workload scheduling. *(Think proto-containerization with Linux VMs for specialized workloads.)*
 * Lead on **increasing isolation between different customers'** monitoring by sharding workloads from one single physical server onto smaller VMs, with scheduling based on configured resource constraints.
 * Established **standard system configuration best practices** applied uniformly across our 500+ servers (VMs and bare metal) across multiple services.
 
-#### Google Apps for Your Domain (Now GSuite) Administrator Lead for google.com
+#### Google Apps for Your Domain (Now GSuite) Administrator Lead for google.com *(2008 - 2010)*
 - **Managed all domain-wide policies** for Google's own GSuite domain, including:
 	- **User status/password sync** from the various systems of record.
 	- Populating **IP whitelist by digesting internals network configs**.
@@ -38,10 +38,10 @@ Employment
 - **Met in person with various GSuite teams** (Calendar, Admin Console, Gmail, Docs, etc.) PMs to **provide feedback on missing features and requirements for enterprise** use cases, helping steer roadmaps.
 - Worked with GSuite team to **roll out Google multi-login**, including both managing the google.com domain changes and consulting on requirements for the feature's roll out. For this work, I received an **OC Award Honorable Mention**.
 
-#### Single Sign-On SRE "Tech Lead" (Team of 1)
+#### Single Sign-On SRE "Tech Lead" (Team of 1) *(2008 - 2010)*
 - Provided SRE support for Google's in-house SSO system, including monitoring, alerting, and deployment support.
 
-### Google Inc. - *Sysops Intern* - June 2006 - August 2006
+### Google Inc. - **Sysops Intern** - *June 2006 - August 2006*
 - **Migrated Googler Calendars from Oracle Calendar to Google Calendar**
 	- In advance of Google's initial release of Google Calendar for enterprise and to aid with internal dogfooding, I wrote all the tools to export all employee calendar data from Oracle Calendar and import it into Google Calendar.
 - **Global logs visualization**
