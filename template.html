@@ -283,7 +283,8 @@
 		body.classList.add("dark");
 	}
 
-	function toggleDark() {
+	function toggleDark(event) {
+		event.preventDefault();
 		body.classList.toggle("dark");
 	}
 
