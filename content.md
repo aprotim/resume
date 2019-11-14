@@ -49,18 +49,18 @@ Employment
 Volunteering/Service
 --------------------
    
-### CSSI@Google
+### CSSI@Google LAX
 
-[CSSI](https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/) is a three-week intensive course in programming for rising college freshman the summer before they start college. Students are primarily from groups underrepresented in tech. In the last week of the course, students design, implement, and present their own web app.
+[CSSI](https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/) is a three-week intensive programming course in programming for rising college freshman, culminating in students designing, implementing, and building their own web app. Students are primarily from groups underrepresented in tech.
 
 #### Co-Lead Instructor - Summer 2018/2019
-- **Ran Google L.A.'s CSSI instruction**, along with my co-lead.
-	- **Planned and delivered lessons** on both technical topics and life skills, including detailed instruction on Python, ad hoc breakout sessions, growth vs. fixed mindset, reviews, and custom labs beyond the standard CSSI curriculum to adapt to the students' needs.
-	- **Recruited a diverse team of module instructors and TAs** from the other engineers in the office, so that the students would see themselves reflected in their instructors.
+- **Ran Google L.A.'s CSSI instruction** for two summers, along with my co-lead.
+	- **Planned and delivered lessons** including Python lessons, ad hoc breakout sessions, and custom labs as well as life skills like growth mindset, protocols for problem solving.
+	- **Recruited diverse team of module instructors/TAs** from the office, so that the students would see themselves reflected in their instructors.
 	- **Led instructional/pedagogical training** for module instructors and TAs.
 	- Provided **personalized mentorship** to students.
-	- Students gave me **4.9/5.0 rating** as an instructor in the end-of-program survey.
-- In 2019, **100% of our students reported seeing themselves graduating with a CS degree**, **91% reported increased sense of belonging** in the field, and **85% said the program helped prepare them for college**.
+- Received **4.9/5.0 instructor rating** from students end-of-program survey.
+- In 2019, **91% of students reported increased sense of belonging** in the field, and **85% said the program helped prepare them for college**.
 
 #### Python Module Instructor - Summer 2017
 - **Planned and taught** two full-day (9am-6pm) lessons on Python to the students, as well TAing frequently.
