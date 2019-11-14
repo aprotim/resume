@@ -18,23 +18,24 @@ Employment
    * **Conform to security best practices**, seeking input from security team and building out features as needed to help users avoid security pitfalls.
 
 #### Enterprise Data Storage - Individual Contributor - (2014 - Present)
-* Migrated XX,000 long-term storage images from deprecated tape system onto cloud storage, including integrity checking and modifying the in-house-built backups management system.
-* Worked on tooling to manage a fleet of several hundred NetApp filers, providing more SRE-like control planes. (In our experience, the tooling for NetApps was designed for pets, we needed cattle.)
+* **Migrated XX,000 long-term storage images** from deprecated tape system onto cloud storage, including integrity checking and modifying our backups management software.
+* Worked on tooling to **manage a fleet of several hundred NetApp filers, providing more SRE-like control planes**. (We needed cattle, NetApp designed pets.)
 
 #### Enterprise Monitoring - Individual Contributor
-* Managed full monitoring infrastructure for Google’s internal (“corp”) systems. Because monitoring was a hard dependency of critical infrastructure like internal DNS, DHCP, and auth, this required an incredibly resilient system, adapting tooling designed for the Google production stack to run on standard Linux servers on the corporate network, both in data centers and offices.
-* Replaced previous, high-toil on-prem system management with automatic workload scheduling. (Think proto-containerization on Linux VMs with specialized workloads.)
-* Managed project to increase isolation between different customers' monitoring by sharding workloads that were combined into a single physical server onto smaller virtual machines, where scheduling could be performed based on configured resource constraints.
-* Established a set of standard system configuration best practices applied uniformly across our 500+ servers (VMs and bare metal) across multiple services.
+* **Managed monitoring infrastructure** for Google’s internal (“corp”) systems. (As a hard dependency of critical infrastructure our availability SLOs had to be greater than any dependent system like internal DNS, DHCP, auth, etc.)
+* **Adapted tooling designed for the Google production stack** to run on standard Linux servers both in data centers and offices.
+* **Replaced previous, high-toil on-prem system management** with automatic workload scheduling. (Think proto-containerization with Linux VMs for specialized workloads.)
+* Lead on **increasing isolation between different customers'** monitoring by sharding workloads from one single physical server onto smaller VMs, with scheduling based on configured resource constraints.
+* Established **standard system configuration best practices** applied uniformly across our 500+ servers (VMs and bare metal) across multiple services.
 
 #### Google Apps for Your Domain (Now GSuite) Administrator Lead for google.com
-- Managed all domain-wide policies for Google's own GSuite domain, including:
-	- User status/password sync from the various systems of record.
-	- Synchronization of IP whitelist based on internal network configuration.
-	- Group/policy synchronization.
-- Set policy for access to former user data, in line with established privacy/authorization practices within the company.
-- Maintained and improved internal tool providing delegated, logged administrative access to internal helpdesk, including managing quota and access to orphaned data.
-- Met in person with various GSuite teams (Calendar, Admin Console, Gmail, Docs, etc.) PMs to provide feedback on missing features and requirements for enterprise use cases, and helped steer roadmaps.
+- **Managed all domain-wide policies** for Google's own GSuite domain, including:
+	- **User status/password sync** from the various systems of record.
+	- Populating **IP whitelist by digesting internals network configs**.
+	- **Group/policy synchronization.**
+- **Set policy for access to former user data**, in line with established privacy/authorization practices within the company.
+- **Maintained internal tool for providing delegated, logged administrative access** to internal helpdesk, including managing quota and access to orphaned data.
+- **Met in person with various GSuite teams** (Calendar, Admin Console, Gmail, Docs, etc.) PMs to **provide feedback on missing features and requirements for enterprise** use cases, helping steer roadmaps.
 - Worked with GSuite team to **roll out Google multi-login**, including both managing the google.com domain changes and consulting on requirements for the feature's roll out. For this work, I received an **OC Award Honorable Mention**.
 
 #### Single Sign-On SRE "Tech Lead" (Team of 1)
@@ -59,7 +60,7 @@ Volunteering/Service
 	- **Recruited diverse team of module instructors/TAs** from the office, so that the students would see themselves reflected in their instructors.
 	- **Led instructional/pedagogical training** for module instructors and TAs.
 	- Provided **personalized mentorship** to students.
-- Received **4.9/5.0 instructor rating** from students end-of-program survey.
+- Received **4.9/5.0 instructor rating** from students end-of-program survey, as well as the **Google LAX Citizenship Award** and **Google Connect Impact Award**.
 - In 2019, **91% of students reported increased sense of belonging** in the field, and **85% said the program helped prepare them for college**.
 
 #### Python Module Instructor - Summer 2017
