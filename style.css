@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro&display=swap');
 :root {
 	--base03: #002b36;
@@ -67,7 +68,7 @@
 }
 h1 b, h1 strong, h2 b, h2 strong, h3 b, h3 strong {
 	font-weight: bolder;
-border-bottom: 1px var(--secondary-color) dotted;
+	border-bottom: 1px var(--secondary-color) dotted;
 
 }
 b, strong {
@@ -97,7 +98,7 @@ h2,h3,h4,h5,h6 {
 h1,h2,h3 {
 	font-family: var(--title-font);
 }
-h1 + h2,h2 + h3,h3 + h4,h4 + h5,h5 + h6 {
+h1 + p + h2, h1 + h2,h2 + h3,h3 + h4,h4 + h5,h5 + h6 {
 	margin-top: -0.4em;
 }
 h2 {
@@ -133,7 +134,9 @@ h1+p {
 	padding-top: 0pt;
 	padding-bottom: 0pt;
 	text-align: right;
-	margin-right: -1.5pt
+	margin-right: -1.5pt;
+	display: inline-block;
+	float: right;
 }
 a {
 	text-decoration-skip-ink: none;
@@ -151,6 +154,7 @@ h1 {
 	text-align: left;
 	margin-right: -0.8pt
 	break-after:column;
+	display: inline-block;
 }
 li {
 	line-height: 1.15;
