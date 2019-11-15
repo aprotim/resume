@@ -289,16 +289,16 @@
 	}
 
 	let toggleBox = document.createElement('div');
-	toggleBox.style.position = "relative";
-	toggleBox.style.top = "0";
 	toggleBox.classList.add('ui');
+	toggleBox.style.textAlign = "right";
+	toggleBox.style.padding = "5px 0px";
+	toggleBox.style.marginBottom = "10px";
+	toggleBox.style.borderBottom = "1px dashed var(--blue)";
 
 	let toggleLink = document.createElement('a');
 	toggleLink.href = "#";
 	toggleLink.addEventListener('click', toggleDark);
 	toggleLink.innerText = "Toggle Dark Mode";
-	toggleLink.style.position = "absolute";
-	toggleLink.style.right = "0";
 	toggleLink.style.backgroundColor = 'var(--bg-highlights)';
 	toggleLink.style.padding = "5px";
 
