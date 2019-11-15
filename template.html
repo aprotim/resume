@@ -3,6 +3,7 @@
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="content-type">
 		<style type="text/css">
+
 			@import url('https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro&display=swap');
 			:root {
 				--base03: #002b36;
@@ -102,7 +103,7 @@
 			h1,h2,h3 {
 				font-family: var(--title-font);
 			}
-			h1 + h2,h2 + h3,h3 + h4,h4 + h5,h5 + h6 {
+			h1 + p + h2, h1 + h2,h2 + h3,h3 + h4,h4 + h5,h5 + h6 {
 				margin-top: -0.4em;
 			}
 			h2 {
@@ -138,7 +139,9 @@
 				padding-top: 0pt;
 				padding-bottom: 0pt;
 				text-align: right;
-				margin-right: -1.5pt
+				margin-right: -1.5pt;
+				display: inline-block;
+				float: right;
 			}
 			a {
 				text-decoration-skip-ink: none;
@@ -156,6 +159,7 @@
 				text-align: left;
 				margin-right: -0.8pt
 				break-after:column;
+				display: inline-block;
 			}
 			li {
 				line-height: 1.15;
