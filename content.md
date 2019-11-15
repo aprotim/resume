@@ -24,9 +24,9 @@ Employment
 #### Enterprise Monitoring - Individual Contributor *(2010 - 2014)*
 * **Managed monitoring infrastructure** for Google’s internal (“corp”) systems. (As a hard dependency of critical infrastructure our availability SLOs had to be greater than any dependent system like internal DNS, DHCP, auth, etc.)
 * **Adapted tooling designed for the Google production stack** to run on standard Linux servers both in data centers and offices.
-* **Replaced previous, high-toil on-prem system management** with automatic workload scheduling. *(Think proto-containerization with Linux VMs for specialized workloads.)*
-* Lead on **increasing isolation between different customers'** monitoring by sharding workloads from one single physical server onto smaller VMs, with scheduling based on configured resource constraints.
-* Established **standard system configuration best practices** applied uniformly across our 500+ servers (VMs and bare metal) across multiple services.
+* **Replaced previous, high-toil on-prem system management** with automatic workload scheduling. *(Think proto-containerization with Linux VMs and specialized workloads.)*
+* Lead on **isolating different customers' monitoring** by sharding workloads from large, shared physical servers onto small VMs, with scheduling based on configured resource constraints.
+* Established **standard system configuration best practices** applied uniformly across 500+ servers and multiple services.
 
 #### Google Apps for Your Domain (Now GSuite) Administrator Lead for google.com *(2008 - 2010)*
 - **Managed all domain-wide policies** for Google's own GSuite domain, including:
@@ -65,12 +65,6 @@ Volunteering/Service
 
 #### Python Module Instructor - Summer 2017
 - **Planned and taught** two full-day (9am-6pm) lessons on Python to the students, as well TAing frequently.
-
-### Meals on Wheels
-
-#### Delivery Driver 2011-2018
-
-- Delivered meals to those with mobility once every seven weeks.
 
 Skills
 ------
