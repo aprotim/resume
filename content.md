@@ -7,6 +7,11 @@ Employment
 ------------
 ### Google, Inc. - **Site Reliability Engineer** - *February 2008 - Present*
 
+Across my entire tenure as a Google SRE, I've built and run parts of Google's enterprise infrastructure using combinations
+of open source tools on vanilla-ish Linux, proprietary third-party platforms, Google's production infrastructure, and Google
+Cloud Platform. I've carried oncall pagera with 5-minute and 30-minute response SLAs. I have worked to reduce and automate
+away toil and help my teams build tools and procedures to do the same.
+
 #### Backups Tech Lead - Enterprise Data Storage - *(2017-Present)*
 * **Designed Google’s next gen internal backup tool** from the ground up.
    * Built on **Google Cloud Platform** to manage provisioning of storage, storage class migration, data retention, authentication/authorization, key escrow, and encryption.
@@ -54,7 +59,7 @@ Volunteering/Service
 
 [CSSI](https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/) is a three-week intensive programming course in programming for rising college freshman, culminating in students designing, implementing, and building their own web app. Students are primarily from groups underrepresented in tech.
 
-#### Co-Lead Instructor - Summer 2018/2019
+#### Co-Lead Instructor - Summer 2018 and 2019
 - **Ran Google L.A.'s CSSI instruction** for two summers, along with my co-lead.
 	- **Planned and delivered lessons** including Python lessons, ad hoc breakout sessions, and custom labs as well as life skills like growth mindset, protocols for problem solving.
 	- **Recruited diverse team of module instructors/TAs** from the office, so that the students would see themselves reflected in their instructors.
