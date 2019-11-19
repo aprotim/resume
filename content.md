@@ -7,10 +7,9 @@ Employment
 ------------
 ### Google, Inc. - **Site Reliability Engineer** - *February 2008 - Present*
 
-Across my entire tenure as a Google SRE, I've built and run parts of Google's enterprise infrastructure using combinations
-of open source tools on vanilla-ish Linux, proprietary third-party platforms, Google's production infrastructure, and Google
-Cloud Platform. I've carried oncall pagera with 5-minute and 30-minute response SLAs. I have worked to reduce and automate
-away toil and help my teams build tools and procedures to do the same.
+During tenure as an SRE, I've built and run Google enterprise infrastructure using open source tools on vanilla-ish Linux,
+proprietary third-party platforms, Google's production infrastructure, and Google Cloud Platform; I've carried oncall pagers
+with 5-minute and 30-minute response SLAs; and I've built tools and processes to reduce and automate away toil.
 
 #### Backups Tech Lead - Enterprise Data Storage - *(2017-Present)*
 * **Designed Google’s next gen internal backup tool** from the ground up.
