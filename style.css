@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro&display=swap');
 :root {
 	--base03: #002b36;
@@ -20,7 +21,7 @@
 	orphans: 2;
 	widows: 2;
 }
-@media print{
+@media print {
 	html {
 		--bgcolor: white;
 		--bg-highlights: white;
@@ -28,8 +29,15 @@
 		--body-color: var(--base03);
 		--bold-color: var(--base03);
 		--bolder-color: var(--base03);
-		--boldest-color: var(--base03);	
+		--boldest-color: var(--base03);
 	}
+
+
+	.ui {
+		display: none;
+	}
+
+
 }
 @media screen {
 	html {
@@ -54,17 +62,23 @@
 		max-width: 432pt;
 		min-width: 186pt;
 		padding: 26pt 45pt;
-		margin: auto;				
+		margin: auto;
 	}
+
 }
-h2 b, h2 strong {
+h1 b, h1 strong, h2 b, h2 strong, h3 b, h3 strong {
 	font-weight: bolder;
+	border-bottom: 1px var(--secondary-color) dotted;
+
 }
 b, strong {
 	color: var(--bolder-color);
 }
 em, i {
-	color: var(--secondary-color);				
+	color: var(--secondary-color);
+}
+h1 em, h1 i, h2 em, h2 i, h3 em, h3 i {
+	color: var(--bolder-color);
 }
 body {
 	color: var(--bold-color);
@@ -84,7 +98,7 @@ h2,h3,h4,h5,h6 {
 h1,h2,h3 {
 	font-family: var(--title-font);
 }
-h1 + h2,h2 + h3,h3 + h4,h4 + h5,h5 + h6 {
+h1 + p + h2, h1 + h2,h2 + h3,h3 + h4,h4 + h5,h5 + h6 {
 	margin-top: -0.4em;
 }
 h2 {
@@ -99,17 +113,16 @@ h3 {
 }
 h4 {
 	color: var(--bolder-color);
-	font-size: 11pt;
-	font-style: italic;
+	font-size: 10pt;
 }
 h5 {
 	color: var(--bold-color);
-	font-size: 11pt;
+	font-size: 10pt;
 	font-style: italic;
 }
 h6 {
 	color: var(--secondary-color);
-	font-size: 11pt;
+	font-size: 10pt;
 }
 ol,ul {
 	margin: 0;
@@ -121,7 +134,9 @@ h1+p {
 	padding-top: 0pt;
 	padding-bottom: 0pt;
 	text-align: right;
-	margin-right: -1.5pt
+	margin-right: -1.5pt;
+	display: inline-block;
+	float: right;
 }
 a {
 	text-decoration-skip-ink: none;
@@ -139,6 +154,7 @@ h1 {
 	text-align: left;
 	margin-right: -0.8pt
 	break-after:column;
+	display: inline-block;
 }
 li {
 	line-height: 1.15;
