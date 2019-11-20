@@ -7,7 +7,7 @@ Employment
 ------------
 ### Google, Inc. - **Site Reliability Engineer** - *February 2008 - Present*
 
-During tenure as an SRE, I've built and run Google enterprise infrastructure using open source tools on vanilla-ish Linux,
+During my tenure as an SRE, I've built and run Google enterprise infrastructure using open source tools on vanilla-ish Linux,
 proprietary third-party platforms, Google's production infrastructure, and Google Cloud Platform; I've carried oncall pagers
 with 5-minute and 30-minute response SLAs; and I've built tools and processes to reduce and automate away toil.
 
