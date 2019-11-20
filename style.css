@@ -103,7 +103,7 @@ b, strong {
 em, i {
 	color: var(--secondary-color);
 }
-h1 em, h1 i, h2 em, h2 i, h3 em, h3 i {
+h1 em, h1 i, h2 em, h2 i, h3 em, h3 i, h4 em, h4 i {
 	color: var(--bolder-color);
 }
 body {
