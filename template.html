@@ -1,361 +1,467 @@
 <!DOCTYPE html>
+<!-- Copyright (c) Aprotim Sanyal, 2019. -->
 <html>
-	<head>
-		<meta content="text/html; charset=utf-8" http-equiv="content-type">
-		<style type="text/css">
-			@import url('https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro&display=swap');
-			:root {
-				--base03: #002b36;
-				--base02: #073642;
-				--base01: #586e75;
-				--base00: #657b83;
-				--base0: #839496;
-				--base1: #93a1a1;
-				--base2: #eee8d5;
-				--base3: #fdf6e3;
-				--yellow: #b58900;
-				--orange: #cb4b16;
-				--red: #dc322f;
-				--magenta: #d33682;
-				--violet: #6c71c4;
-				--blue: #268bd2;
-				--cyan: #2aa198;
-				--green: #859900;
-				--title-font: 'Inconsolata', monospace;
-				orphans: 2;
-				widows: 2;
-			}
-			@media print {
-				html {
-					--bgcolor: white;
-					--bg-highlights: white;
-					--secondary-color: var(--base02);
-					--body-color: var(--base03);
-					--bold-color: var(--base03);
-					--bolder-color: var(--base03);
-					--boldest-color: var(--base03);
-				}
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
 
-			}
-			@media screen {
-				html {
-					--bgcolor: var(--base3);
-					--bg-highlights: var(--base2);
-					--secondary-color: var(--base1);
-					--body-color: var(--base00);
-					--bold-color: var(--base01);
-					--bolder-color: var(--base02);
-					--boldest-color: var(--base03);
-				}
-				.dark {
-					--bgcolor: var(--base03);
-					--bg-highlights: var(--base02);
-					--secondary-color: var(--base01);
-					--body-color: var(--base0);
-					--bold-color: var(--base1);
-					--bolder-color: var(--base2);
-					--boldest-color: var(--base3);
-				}
-				body {
-					max-width: 432pt;
-					min-width: 186pt;
-					padding: 26pt 45pt;
-					margin: auto;
-				}
+      @import url('https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro&display=swap');
+      :root {
+        --base03: #002b36;
+        --base02: #073642;
+        --base01: #586e75;
+        --base00: #657b83;
+        --base0: #839496;
+        --base1: #93a1a1;
+        --base2: #eee8d5;
+        --base3: #fdf6e3;
+        --yellow: #b58900;
+        --orange: #cb4b16;
+        --red: #dc322f;
+        --magenta: #d33682;
+        --violet: #6c71c4;
+        --blue: #268bd2;
+        --cyan: #2aa198;
+        --green: #859900;
+        --title-font: 'Inconsolata', monospace;
+        orphans: 2;
+        widows: 2;
+      }
+      @media print {
+        html {
+          --bgcolor: white;
+          --bg-highlights: white;
+          --secondary-color: var(--base02);
+          --body-color: var(--base03);
+          --bold-color: var(--base03);
+          --bolder-color: var(--base03);
+          --boldest-color: var(--base03);
+        }
 
-			}
-			h2 b, h2 strong {
-				font-weight: bolder;
-			}
-			b, strong {
-				color: var(--bolder-color);
-			}
-			em, i {
-				color: var(--secondary-color);
-			}
-			body {
-				color: var(--bold-color);
-				font-size: 10pt;
-				font-family: 'Source Sans Pro', sans-serif;
-				font-style: normal;
-				background-color: var(--bgcolor);
-			}
-			h2,h3,h4,h5,h6 {
-				padding: 0pt;
-				margin: 1em auto 0.5em auto;
-				page-break-after: avoid;
-				padding-bottom: 0pt;
-				line-height: 1.0;
-				font-weight: bold;
-			}
-			h1,h2,h3 {
-				font-family: var(--title-font);
-			}
-			h1 + h2,h2 + h3,h3 + h4,h4 + h5,h5 + h6 {
-				margin-top: -0.4em;
-			}
-			h2 {
-				color: var(--orange);
-				font-size: 16pt;
-				border-bottom: solid 1px var(--bolder-color);
-				background-color: var(--bg-highlights);
-			}
-			h3 {
-				color: var(--boldest-color);
-				font-size: 12pt;
-			}
-			h4 {
-				color: var(--bolder-color);
-				font-size: 10pt;
-				font-style: italic;
-			}
-			h5 {
-				color: var(--bold-color);
-				font-size: 10pt;
-				font-style: italic;
-			}
-			h6 {
-				color: var(--secondary-color);
-				font-size: 10pt;
-			}
-			ol,ul {
-				margin: 0;
-			}
-			table td,table th {
-				padding: 0
-			}
-			h1+p {
-				padding-top: 0pt;
-				padding-bottom: 0pt;
-				text-align: right;
-				margin-right: -1.5pt
-			}
-			a {
-				text-decoration-skip-ink: none;
-				-webkit-text-decoration-skip: none;
-				color: var(--blue);
-				text-decoration: underline
-			}
-			h1 {
-				padding-top: 0pt;
-				color: var(--blue);
-				font-weight: 700;
-				font-size: 18pt;
-				padding-bottom: 10pt;
-				line-height: 1.0;
-				text-align: left;
-				margin-right: -0.8pt
-				break-after:column;
-			}
-			li {
-				line-height: 1.15;
-			}
-			p {
-				margin: 0;
-			}
-		</style>
-		<title></title>
-	</head>
-	<body>
-		<h1 id="aprotim-sanyal">
-			Aprotim Sanyal
-		</h1>
-		<p>
-			<a href="mailto:aprotim@aprotim.com">aprotim@aprotim.com</a><br>
-			(310) 243-6230
-		</p>
-		<h2 id="experience">
-			Experience
-		</h2>
-		<h3 id="google-inc---site-reliability-engineer---february-2008---present">
-			Google, Inc. - <em>Site Reliability Engineer - February 2008 - Present</em>
-		</h3>
-		<h4 id="backups-tech-lead---enterprise-data-storage---2017-present">
-			Backups Tech Lead - Enterprise Data Storage - (2017-Present)
-		</h4>
-		<ul>
-			<li>
-				<strong>Designed Google’s next gen internal backup tool</strong> from the ground up.
-				<ul>
-					<li>Built on <strong>Google Cloud Platform</strong> to manage provisioning of storage, storage class migration, data retention, authentication/authorization, key escrow, and encryption.
-					</li>
-					<li>Made setup and restore <strong>self-service</strong>, leading to happier users and less toil on the team.
-					</li>
-				</ul>
-			</li>
-			<li>
-				<strong>Set technical direction</strong> for a team of between <strong>2 and 6 engineers</strong> to build, test, and rollout our new service.
-			</li>
-			<li>
-				<strong>Managed inter-team coordination</strong> to:
-				<ul>
-					<li>
-						<strong>Push for upstream features</strong> in Google Cloud Storage by speccing requirements, coordinating changes, and finding headcount from internal initiatives.
-					</li>
-					<li>
-						<strong>Capture user requirements</strong> by working closely with alpha-/beta-testers to capture pain points, hard requirements, and wishlist features.
-					</li>
-					<li>
-						<strong>Conform to security best practices</strong>, seeking input from security team and building out features as needed to help users avoid security pitfalls.
-					</li>
-				</ul>
-			</li>
-		</ul>
-		<h4 id="cssi-lead-instructor---summer-20182019">
-			CSSI Lead Instructor - Summer 2018/2019
-		</h4>
-		<ul>
-			<li>
-				<strong>Taught three week intensive course in programming</strong> to rising college students.
-				<ul>
-					<li>Taught 30+ students, primarily from backgrounds underrepresented in tech. XX% of students reported more likely to pursue a course of study in CS, and XX% reported increased confidence in their technical ability
-					</li>
-					<li>Planned and delivered lessons on both technical topics and life skills.
-					</li>
-					<li>Recruited a diverse team of module instructors from the other engineers in the office, so that the students would see themselves reflected in their instructors.
-					</li>
-				</ul>
-			</li>
-		</ul>
-		<h4 id="enterprise-data-storage---individual-contributor---2014---present">
-			Enterprise Data Storage - Individual Contributor - (2014 - Present)
-		</h4>
-		<ul>
-			<li>Migrated XX,000 long-term storage images from deprecated tape system onto cloud storage, including integrity checking and modifying the in-house-built backups management system.
-			</li>
-			<li>Worked on tooling to manage a fleet of several hundred NetApp filers, and providing more SRE-like interfaces for them. (In our experience, the tooling for NetApps was designed for pets, we needed cattle.)
-			</li>
-		</ul>
-		<h4 id="enterprise-monitoring---individual-contributor">
-			Enterprise Monitoring - Individual Contributor
-		</h4>
-		<ul>
-			<li>Managed full monitoring infrastructure for Google’s internal (“corp”) systems. Because monitoring was a hard dependency of critical infrastructure like internal DNS, DHCP, and auth, this required an incredibly resilient system, adapting tooling designed for the Google production stack to run on standard Linux servers on the corporate network, both in data centers and offices.
-			</li>
-			<li>Replaced previous, high-toil on-prem system management with automatic workload scheduling. (Think proto-containerization on Linux VMs with specialized workloads.)
-			</li>
-			<li>Managed project to increase isolation between different customer’s monitoring by sharding workloads that were combined into a single physical server onto smaller, where scheduling could be performed based on configured resource constraints.
-			</li>
-			<li>Established a set of standard system configuration best practices applied uniformly across our 500+ servers (VMs and bare metal) across multiple services.
-			</li>
-		</ul>
-		<h4 id="google-apps-for-your-domain-now-gsuite-administrator-lead-for-googlecom">
-			Google Apps for Your Domain (Now GSuite) Administrator Lead for google.com
-		</h4>
-		<ul>
-			<li>Managed all domain-wide policies for Google's own GSuite domain, including:
-				<ul>
-					<li>User status/password sync from the various systems of record.
-					</li>
-					<li>Synchronization of IP whitelist based on internal network configuration.
-					</li>
-					<li>Group/policy synchronization.
-					</li>
-				</ul>
-			</li>
-			<li>Set policy for access to former user data, in line with established privacy/authorization practices within the company.
-			</li>
-			<li>Maintained and improved internal tool providing delagated, logged administrative access to internal helpdesk, including managing quota, and access to orphaned data.
-			</li>
-			<li>Met in person with various GSuite teams (Calendar, Admin Console, Gmail, Docs, etc.) PMs to provide feedback on missing features and requirements for enterprise use cases, and helped steer roadmaps.
-			</li>
-		</ul>
-		<h4 id="single-sign-on-sre-tech-lead-team-of-1">
-			Single Sign-On SRE "Tech Lead" (Team of 1)
-		</h4>
-		<ul>
-			<li>Provided SRE support for Google's in-house SSO system, including monitoring, alerting, and deployment support.
-			</li>
-		</ul>
-		<h3 id="google-inc---sysops-intern---june-2006---august-2006">
-			Google Inc. - <em>Sysops Intern</em> - June 2006 - August 2006
-		</h3>
-		<ul>
-			<li>
-				<strong>Migrated Googler Calandars from Oracle Calendar to Google Calendar</strong>
-				<ul>
-					<li>In advance of Google's initial release of Google Calendar for enterprise and to aid with internal dogfooding, I wrote all the tools to export all employee calendar data from Oracle Calandar and import it into Google Calendar.
-					</li>
-				</ul>
-			</li>
-			<li>
-				<strong>Global logs visualization</strong>
-				<ul>
-					<li>Used a combination of Sawzall and Python to analyze and geolocate logs data from internal infrastructure and visualize the magnitude of internal traffic onto Google Earth using dynamically rendered KML.
-					</li>
-				</ul>
-			</li>
-		</ul>
-		<h2 id="skills">
-			Skills
-		</h2>
-		<h4 id="expert-in">
-			Expert in:
-		</h4>
-		<ul>
-			<li>Languages (computer): <strong>Python</strong>, <strong>Bash</strong> (sad, but true)
-			</li>
-			<li>Languages (human): <strong>English</strong> (written and spoken!)
-			</li>
-			<li>Large scale system management:
-				<ul>
-					<li>
-						<strong>Large-Scale System Design</strong>
-					</li>
-					<li>
-						<strong>Monitoring/alerting</strong>
-					</li>
-					<li>
-						<strong>Reliable deployment</strong>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<strong>Linux</strong> system administration
-			</li>
-		</ul>
-		<h4 id="enthusiastic-dilettante-in">
-			Enthusiastic dilettante in:
-		</h4>
-		<ul>
-			<li>Languages (computer): <strong>JavaScript/ECMAScript</strong>, <strong>Node.js</strong>, <strong>Go</strong>
-			</li>
-			<li>Languages (human): <strong>Spanish</strong>
-			</li>
-			<li>
-				<strong>Teaching</strong> peers and young students.
-			</li>
-		</ul>
-		<h4 id="its-been-a-while-but-i-could-probably-pick-it-back-up">
-			It’s been a while, but I could probably pick it back up:
-		</h4>
-		<ul>
-			<li>Languages (computer): <strong>C</strong>, <strong>C++</strong>, <strong>Java</strong>, <strong>Ruby</strong> (on or off Rails), <strong>Perl</strong>, <strong>Lisp</strong>
-			</li>
-			<li>Languages (human): <strong>French</strong>, <strong>Hindi</strong>, <strong>Bengali</strong>
-			</li>
-		</ul>
-		<h2 id="education">
-			Education
-		</h2>
-		<h3 id="university-of-virginia-dept-of-computer-science">
-			University of Virginia, Dept of Computer Science
-		</h3>
-		<h4 id="ms-in-computer-science---jan-2008">
-			M.S. in Computer Science - Jan 2008
-		</h4>
-		<p>
-			Thesis: <strong>“Color CT: Capturing Energy Dependence in CT Scans”</strong> Publications: Williams, Daniel, et al. <strong>"A cross-layer approach to heterogeneity and reliability."</strong> <em>Proceedings of the 7th IEEE/ACM international conference on Formal Methods and Models for Codesign.</em> IEEE Press, 2009.
-		</p>
-		<h3 id="university-of-virginia-school-of-engineering--applied-science">
-			University of Virginia, School of Engineering & Applied Science
-		</h3>
-		<h4 id="bs-with-honors-in-computer-science---may-2005br-also-completed-requirements-for-ba-in-cognitive-science">
-			B.S. with Honors in Computer Science - May 2005<br>
-			Also completed requirements for B.A. in Cognitive Science
-		</h4>
-		<p>
-			Thesis: <strong>“NJTopol: Adding Topology to Parallelized Neural Simulation”</strong> Publications: Levy, William B., et al. <strong>"The formation of neural codes in the hippocampus: trace conditioning as a prototypical paradigm for studying the random recoding hypothesis."</strong> <em>Biological cybernetics</em> 92.6 (2005): 409-426.
-		</p>
-	</body>
+
+        .ui {
+          display: none;
+        }
+
+      }
+      @media screen {
+        html {
+          --bgcolor: var(--base3);
+          --bg-highlights: var(--base2);
+          --secondary-color: var(--base1);
+          --body-color: var(--base00);
+          --bold-color: var(--base01);
+          --bolder-color: var(--base02);
+          --boldest-color: var(--base03);
+        }
+        .dark {
+          --bgcolor: var(--base03);
+          --bg-highlights: var(--base02);
+          --secondary-color: var(--base01);
+          --body-color: var(--base0);
+          --bold-color: var(--base1);
+          --bolder-color: var(--base2);
+          --boldest-color: var(--base3);
+        }
+        body {
+          max-width: 432pt;
+          min-width: 186pt;
+          padding: 26pt 45pt;
+          margin: auto;
+        }
+
+      }
+      h1 b, h1 strong, h2 b, h2 strong, h3 b, h3 strong {
+        font-weight: bolder;
+        border-bottom: 1px var(--secondary-color) dotted;
+      }
+      b, strong {
+        color: var(--bolder-color);
+      }
+      em, i {
+        color: var(--secondary-color);
+      }
+      h1 em, h1 i, h2 em, h2 i, h3 em, h3 i {
+        color: var(--bolder-color);
+      }
+      body {
+        color: var(--bold-color);
+        font-size: 10pt;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: normal;
+        background-color: var(--bgcolor);
+      }
+      h2,h3,h4,h5,h6 {
+        padding: 0pt;
+        margin: 1em auto 0.5em auto;
+        page-break-after: avoid;
+        padding-bottom: 0pt;
+        line-height: 1.0;
+        font-weight: bold;
+      }
+      h1,h2,h3 {
+        font-family: var(--title-font);
+      }
+      h1 + p + h2, h1 + h2,h2 + h3,h3 + h4,h4 + h5,h5 + h6 {
+        margin-top: -0.4em;
+      }
+      h2 {
+        color: var(--orange);
+        font-size: 16pt;
+        border-bottom: solid 1px var(--bolder-color);
+        background-color: var(--bg-highlights);
+      }
+      h3 {
+        color: var(--boldest-color);
+        font-size: 12pt;
+      }
+      h4 {
+        color: var(--bolder-color);
+        font-size: 10pt;
+      }
+      h5 {
+        color: var(--bold-color);
+        font-size: 10pt;
+        font-style: italic;
+      }
+      h6 {
+        color: var(--secondary-color);
+        font-size: 10pt;
+      }
+      ol,ul {
+        margin: 0;
+      }
+      table td,table th {
+        padding: 0
+      }
+      h1+p {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        text-align: right;
+        margin-right: -1.5pt;
+        display: inline-block;
+        float: right;
+      }
+      a {
+        text-decoration-skip-ink: none;
+        -webkit-text-decoration-skip: none;
+        color: var(--blue);
+        text-decoration: underline
+      }
+      h1 {
+        padding-top: 0pt;
+        color: var(--blue);
+        font-weight: 700;
+        font-size: 18pt;
+        padding-bottom: 10pt;
+        line-height: 1.0;
+        text-align: left;
+        margin-right: -0.8pt
+        break-after:column;
+        display: inline-block;
+      }
+      li {
+        line-height: 1.15;
+      }
+      p {
+        margin: 0;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <div class="ui" style="text-align: right; padding: 0px; margin-bottom: 10px; border-bottom: 1px dashed var(--blue); display: flex;">
+      <div style="background-color: var(--bg-highlights); padding: 5px;"><a href="#" onclick="toggleDark(); return false;">Toggle Dark Mode</a></div>
+      <div style="background-color: var(--bg-highlights); padding: 5px; justify-self: end"><a href="#" onclick="toggleDark(); return false;">Toggle Dark Mode</a></div>
+    </div>
+    <!-- Start Content -->
+    <h1 id="aprotim-sanyal">
+      Aprotim Sanyal
+    </h1>
+    <p>
+      <a href="mailto:jobs@aprotim.com">jobs@aprotim.com</a><br>
+      (310) 243-6230
+    </p>
+    <h2 id="employment">
+      Employment
+    </h2>
+    <h3 id="google-inc---site-reliability-engineer---february-2008---present">
+      Google, Inc. - <strong>Site Reliability Engineer</strong> - <em>February 2008 - Present</em>
+    </h3>
+    <p>
+      During tenure as an SRE, I've built and run Google enterprise infrastructure using open source tools on vanilla-ish Linux, proprietary third-party platforms, Google's production infrastructure, and Google Cloud Platform; I've carried oncall pagers with 5-minute and 30-minute response SLAs; and I've built tools and processes to reduce and automate away toil.
+    </p>
+    <h4 id="backups-tech-lead---enterprise-data-storage---2017-present">
+      Backups Tech Lead - Enterprise Data Storage - <em>(2017-Present)</em>
+    </h4>
+    <ul>
+      <li>
+        <strong>Designed Google’s next gen internal backup tool</strong> from the ground up.
+        <ul>
+          <li>Built on <strong>Google Cloud Platform</strong> to manage provisioning of storage, storage class migration, data retention, authentication/authorization, key escrow, and encryption.
+          </li>
+          <li>Made setup and restore <strong>self-service</strong>, leading to happier users and less toil on the team.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Set technical direction</strong> for a team of between <strong>2 and 6 engineers</strong> to build, test, and roll out our new service.
+      </li>
+      <li>
+        <strong>Managed coordination with other teams</strong> to:
+        <ul>
+          <li>
+            <strong>Push for upstream features</strong> in Google Cloud Storage by speccing requirements, coordinating changes, and finding headcount from internal initiatives.
+          </li>
+          <li>
+            <strong>Capture user requirements</strong> by working closely with alpha-/beta-testers to capture pain points, hard requirements, and wishlist features.
+          </li>
+          <li>
+            <strong>Conform to security best practices</strong>, seeking input from security team and building out features as needed to help users avoid security pitfalls.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h4 id="enterprise-data-storage---individual-contributor---2014---present">
+      Enterprise Data Storage - Individual Contributor - <em>(2014 - Present)</em>
+    </h4>
+    <ul>
+      <li>
+        <strong>Migrated XX,000 long-term storage images</strong> from deprecated tape system onto cloud storage, including integrity checking and modifying our backups management software.
+      </li>
+      <li>Worked on tooling to <strong>manage a fleet of several hundred NetApp filers, providing more SRE-like control planes</strong>. <em>(We needed cattle, NetApp designed pets.)</em>
+      </li>
+    </ul>
+    <h4 id="enterprise-monitoring---individual-contributor-2010---2014">
+      Enterprise Monitoring - Individual Contributor <em>(2010 - 2014)</em>
+    </h4>
+    <ul>
+      <li>
+        <strong>Managed monitoring infrastructure</strong> for Google’s internal (“corp”) systems. (As a hard dependency of critical infrastructure our availability SLOs had to be greater than any dependent system like internal DNS, DHCP, auth, etc.)
+      </li>
+      <li>
+        <strong>Adapted tooling designed for the Google production stack</strong> to run on standard Linux servers both in data centers and offices.
+      </li>
+      <li>
+        <strong>Replaced previous, high-toil on-prem system management</strong> with automatic workload scheduling. <em>(Think proto-containerization with Linux VMs and specialized workloads.)</em>
+      </li>
+      <li>Lead on <strong>isolating different customers' monitoring</strong> by sharding workloads from large, shared physical servers onto small VMs, with scheduling based on configured resource constraints.
+      </li>
+      <li>Established <strong>standard system configuration best practices</strong> applied uniformly across 500+ servers and multiple services.
+      </li>
+    </ul>
+    <h4 id="google-apps-for-your-domain-now-gsuite-administrator-lead-for-googlecom-2008---2010">
+      Google Apps for Your Domain (Now GSuite) Administrator Lead for google.com <em>(2008 - 2010)</em>
+    </h4>
+    <ul>
+      <li>
+        <strong>Managed all domain-wide policies</strong> for Google's own GSuite domain, including:
+        <ul>
+          <li>
+            <strong>User status/password sync</strong> from the various systems of record.
+          </li>
+          <li>Populating <strong>IP whitelist by digesting internals network configs</strong>.
+          </li>
+          <li>
+            <strong>Group/policy synchronization.</strong>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Set policy for access to former user data</strong>, in line with established privacy/authorization practices within the company.
+      </li>
+      <li>
+        <strong>Maintained internal tool for providing delegated, logged administrative access</strong> to internal helpdesk, including managing quota and access to orphaned data.
+      </li>
+      <li>
+        <strong>Met in person with various GSuite teams</strong> (Calendar, Admin Console, Gmail, Docs, etc.) PMs to <strong>provide feedback on missing features and requirements for enterprise</strong> use cases, helping steer roadmaps.
+      </li>
+      <li>Worked with GSuite team to <strong>roll out Google multi-login</strong>, including both managing the google.com domain changes and consulting on requirements for the feature's roll out. For this work, I received an <strong>OC Award Honorable Mention</strong>.
+      </li>
+    </ul>
+    <h4 id="single-sign-on-sre-tech-lead-team-of-1-2008---2010">
+      Single Sign-On SRE "Tech Lead" (Team of 1) <em>(2008 - 2010)</em>
+    </h4>
+    <ul>
+      <li>Provided SRE support for Google's in-house SSO system, including monitoring, alerting, and deployment support.
+      </li>
+    </ul>
+    <h3 id="google-inc---sysops-intern---june-2006---august-2006">
+      Google Inc. - <strong>Sysops Intern</strong> - <em>June 2006 - August 2006</em>
+    </h3>
+    <ul>
+      <li>
+        <strong>Migrated Googler Calendars from Oracle Calendar to Google Calendar</strong>
+        <ul>
+          <li>In advance of Google's initial release of Google Calendar for enterprise and to aid with internal dogfooding, I wrote all the tools to export all employee calendar data from Oracle Calendar and import it into Google Calendar.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Global logs visualization</strong>
+        <ul>
+          <li>Used a combination of Sawzall and Python to analyze and geolocate logs data from internal infrastructure and visualize the magnitude of internal traffic onto Google Earth using dynamically rendered KML.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2 id="volunteeringservice">
+      Volunteering/Service
+    </h2>
+    <h3 id="cssigoogle-lax">
+      CSSI@Google LAX
+    </h3>
+    <p>
+      <a href="https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/">CSSI</a> is a three-week intensive programming course in programming for rising college freshman, culminating in students designing, implementing, and building their own web app. Students are primarily from groups underrepresented in tech.
+    </p>
+    <h4 id="co-lead-instructor---summer-2018-and-2019">
+      Co-Lead Instructor - Summer 2018 and 2019
+    </h4>
+    <ul>
+      <li>
+        <strong>Ran Google L.A.'s CSSI instruction</strong> for two summers, along with my co-lead.
+        <ul>
+          <li>
+            <strong>Planned and delivered lessons</strong> including Python lessons, ad hoc breakout sessions, and custom labs as well as life skills like growth mindset, protocols for problem solving.
+          </li>
+          <li>
+            <strong>Recruited diverse team of module instructors/TAs</strong> from the office, so that the students would see themselves reflected in their instructors.
+          </li>
+          <li>
+            <strong>Led instructional/pedagogical training</strong> for module instructors and TAs.
+          </li>
+          <li>Provided <strong>personalized mentorship</strong> to students.
+          </li>
+        </ul>
+      </li>
+      <li>Received <strong>4.9/5.0 instructor rating</strong> from students end-of-program survey, as well as the <strong>Google LAX Citizenship Award</strong> and <strong>Google Connect Impact Award</strong>.
+      </li>
+      <li>In 2019, <strong>91% of students reported increased sense of belonging</strong> in the field, and <strong>85% said the program helped prepare them for college</strong>.
+      </li>
+    </ul>
+    <h4 id="python-module-instructor---summer-2017">
+      Python Module Instructor - Summer 2017
+    </h4>
+    <ul>
+      <li>
+        <strong>Planned and taught</strong> two full-day (9am-6pm) lessons on Python to the students, as well TAing frequently.
+      </li>
+    </ul>
+    <h2 id="skills">
+      Skills
+    </h2>
+    <h4 id="expert-in">
+      Expert in:
+    </h4>
+    <ul>
+      <li>Languages (computer): <strong>Python</strong>, <strong>Bash</strong> (sad, but true)
+      </li>
+      <li>Languages (human): <strong>English</strong> (written and spoken!)
+      </li>
+      <li>Large-scale system management:
+        <ul>
+          <li>
+            <strong>Large-Scale System Design</strong>
+          </li>
+          <li>
+            <strong>Monitoring/alerting</strong>
+          </li>
+          <li>
+            <strong>Reliable deployment</strong>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Linux</strong> system administration
+      </li>
+    </ul>
+    <h4 id="enthusiastic-dilettante-in">
+      Enthusiastic dilettante in:
+    </h4>
+    <ul>
+      <li>Languages (computer): <strong>JavaScript/ECMAScript</strong>, <strong>Node.js</strong>, <strong>Go</strong>
+      </li>
+      <li>Languages (human): <strong>Spanish</strong>
+      </li>
+      <li>
+        <strong>Teaching</strong> peers and young students.
+      </li>
+    </ul>
+    <h4 id="its-been-a-while-but-i-could-pick-it-back-up">
+      It’s been a while, but I could pick it back up:
+    </h4>
+    <ul>
+      <li>Languages (computer): <strong>C</strong>, <strong>C++</strong>, <strong>Java</strong>, <strong>Ruby</strong> (on or off Rails), <strong>Perl</strong>, <strong>Lisp</strong>
+      </li>
+      <li>Languages (human): <strong>French</strong>, <strong>Hindi</strong>, <strong>Bengali</strong>
+      </li>
+    </ul>
+    <h2 id="education">
+      Education
+    </h2>
+    <h3 id="university-of-virginia-dept-of-computer-science">
+      University of Virginia, Dept of Computer Science
+    </h3>
+    <h4 id="ms-in-computer-science---jan-2008">
+      M.S. in Computer Science - Jan 2008
+    </h4>
+    <p>
+      Thesis: <strong>“Color CT: Capturing Energy Dependence in CT Scans”</strong><br>
+      Publications: Williams, Daniel, et al. <strong>"A cross-layer approach to heterogeneity and reliability."</strong> <em>Proceedings of the 7th IEEE/ACM international conference on Formal Methods and Models for Codesign.</em> IEEE Press, 2009.
+    </p>
+    <h3 id="university-of-virginia-school-of-engineering--applied-science">
+      University of Virginia, School of Engineering & Applied Science
+    </h3>
+    <h4 id="bs-with-honors-in-computer-science---may-2005br-also-completed-requirements-for-ba-in-cognitive-science">
+      B.S. with Honors in Computer Science - May 2005<br>
+      Also completed requirements for B.A. in Cognitive Science
+    </h4>
+    <p>
+      Thesis: <strong>“NJTopol: Adding Topology to Parallelized Neural Simulation”</strong><br>
+      Publications: Levy, William B., et al. <strong>"The formation of neural codes in the hippocampus: trace conditioning as a prototypical paradigm for studying the random recoding hypothesis."</strong> <em>Biological cybernetics</em> 92.6 (2005): 409-426.
+    </p>
+    <script>
+    let body = document.getElementsByTagName('body')[0];
+    if (window.matchMedia("screen and (prefers-color-scheme: dark)").matches) {
+      body.classList.add("dark");
+    }
+	
+    function isString (value) {
+      return typeof value === 'string' || value instanceof String;
+    }
+    
+  	function createElement(tag, children, attributes, style, listeners) {
+  		let el = document.createElement(tag);
+  		if (attributes) {
+  			for (const key in attributes) {
+  			  el.setAttribute(key, attributes[key]);
+  			}
+  		}
+  		if (style) {
+  			for (const key in style) {
+  			  el.style[key] = style[key];
+  			}
+  		}
+      if (children) {
+        if (isString(children)) {
+          el.innerText = children;
+        } else {
+          children.forEach(child => el.appendChild(child));
+        }
+      }
+      if (listeners) {
+  			for (const key in listeners) {
+  			  el.addEventListener(key, listeners[key]);
+  			}        
+      }
+      return el;
+  	}
+
+    function toggleDark() {
+      body.classList.toggle("dark");
+    }
+
+    </script>
+  </body>
 </html>
