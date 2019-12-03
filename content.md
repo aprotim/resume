@@ -56,7 +56,7 @@ Volunteering/Service
    
 ### CSSI@Google LAX
 
-[CSSI](https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/) is a three-week intensive programming course in programming for rising college freshman, culminating in students designing, implementing, and building their own web app. Students are primarily from groups underrepresented in tech.
+[CSSI](https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/) is a three-week intensive programming course for rising college freshman, primarily from groups underrepresented in tech. It culminates in students designing, implementing, and building their own web app.
 
 #### Co-Lead Instructor - Summer 2018 and 2019
 - **Ran Google L.A.'s CSSI instruction** for two summers, along with my co-lead.
