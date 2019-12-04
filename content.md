@@ -26,21 +26,21 @@ with 5-minute and 30-minute response SLAs; and I've built tools and processes to
 - Worked on tooling to **manage a fleet of several hundred NetApp filers, providing more SRE-like control planes**. *(We needed cattle, NetApp designed pets.)*
 
 #### Enterprise Monitoring - Individual Contributor - *(2010 - 2014)*
-- **Managed monitoring infrastructure** for Google’s internal (“corp”) systems. (As a hard dependency of critical infrastructure our availability SLOs had to be greater than any dependent system like internal DNS, DHCP, auth, etc.)
+- **Managed monitoring infrastructure** for Google’s internal (“corp”) systems. (As a hard dependency of critical infrastructure our availability SLOs had to be greater than any dependent system like DNS, DHCP, auth, etc.)
 - **Adapted tooling designed for the Google production stack** to run on standard Linux servers both in data centers and offices.
 - **Replaced previous, high-toil on-prem system management** with automatic workload scheduling. *(Think proto-containerization with Linux VMs and specialized workloads.)*
 - Lead on **isolating different customers' monitoring** by sharding workloads from large, shared physical servers onto small VMs, with scheduling based on configured resource constraints.
-- Established **standard system configuration best practices** applied uniformly across 500+ servers and multiple services.
+- Established **standard system configuration best practices** applied across 500+ servers and all team services.
 
 #### Google Apps for Your Domain (Now GSuite) Administrator Lead for google.com - *(2008 - 2010)*
 - **Managed all domain-wide policies** for Google's own GSuite domain, including:
   - **User status/password sync** from the various systems of record.
   - Populating **IP whitelist by digesting internals network configs**.
   - **Group/policy synchronization.**
-- **Set policy for access to former user data**, in line with established privacy/authorization practices within the company.
+- **Set policy for access to former user data**, in line with established Google privacy/authorization practices.
 - **Maintained internal tool for providing delegated, logged administrative access** to internal helpdesk, including managing quota and access to orphaned data.
 - **Met in person with various GSuite teams** (Calendar, Admin Console, Gmail, Docs, etc.) PMs to **provide feedback on missing features and requirements for enterprise** use cases, helping steer roadmaps.
-- Worked with GSuite team to **roll out Google multi-login**, including both managing the google.com domain changes and consulting on requirements for the feature's roll out. For this work, I received an **OC Award Honorable Mention**.
+- Worked with GSuite team to **roll out Google multi-login**, including both managing the google.com domain changes and consulting on requirements for the feature's roll out. Received an **OC Award Honorable Mention**.
 
 #### Single Sign-On SRE "Tech Lead" (Team of 1) - *(2008 - 2010)*
 - Provided SRE support for Google's in-house SSO system, including monitoring, alerting, and deployment support.
