@@ -96,8 +96,8 @@ Education
 ---------
 
 ### University of Virginia, Dept of Computer Science
-#### M.S. in Computer Science - Jan 2008
-Thesis: **“Color CT: Capturing Energy Dependence in CT Scans”**  
+#### M.Cs. in Computer Science - Jan 2008
+Thesis project: **“Color CT: Capturing Energy Dependence in CT Scans”**  
 Publications: Williams, Daniel, et al. **"A cross-layer approach to heterogeneity and reliability."** *Proceedings of the 7th IEEE/ACM international conference on Formal Methods and Models for Codesign.* IEEE Press, 2009.
 
 ### University of Virginia, School of Engineering & Applied Science
