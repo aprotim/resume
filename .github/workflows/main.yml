@@ -24,12 +24,16 @@ jobs:
         with:
           repository: aprotim/marked
           path: marked
+          
+      - name: install tidy
+        run: sudo apt-get install tidy
 
       - name: Build html
         run: |
           sed '0,/^\s*<!--\s*Start content\s*-->/I!d' main/template.html > resume.html 
           ./marked/bin/marked -i ./main/content.md >> resume.html
-          sed '/^\s*<!--\s*End content\s*-->/I,$!d' main/template.html >> resume.html 
+          sed '/^\s*<!--\s*End content\s*-->/I,$!d' main/template.html >> resume.html
+          tidy resume.html
           
       - name: Upload resume
         uses: actions/upload-artifact@v3
