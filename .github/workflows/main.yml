@@ -36,6 +36,16 @@ jobs:
         with:
           name: resume
           path: resume.html
+      
+      - name: Commit resume
+        run: |
+          cp resume.html ./main/resume.html
+          cd main
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git add resume.html
+          git commit -m 'Update resume contents'
+          git push
           
 
  
