@@ -8,6 +8,7 @@ on:
       - 'template.html'
   pull_request:
     branches: [ master ]
+    paths:
       - 'content.md'
       - 'template.html'
 
