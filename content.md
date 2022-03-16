@@ -5,7 +5,7 @@ jobs@aprotim.com
 
 Employment
 ------------
-### Google, Inc. - **Site Reliability Engineer** - *February 2008 - Present*
+### Google, Inc. - **Site Reliability Engineer** - *February 2008 - February 2020*
 
 During my tenure as an SRE, I've built and run Google enterprise infrastructure using open source tools on vanilla-ish Linux,
 proprietary third-party platforms, Google's production infrastructure, and Google Cloud Platform; I've carried oncall pagers
