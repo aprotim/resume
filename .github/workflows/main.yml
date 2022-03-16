@@ -32,6 +32,8 @@ jobs:  # This workflow contains a single job called "build"
           repository: aprotim/marked
           path: marked
 
+      - name: List current directory
+        run: ls . */
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: ./marked/bin/marked -i ./main/resume.md
