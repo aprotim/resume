@@ -48,7 +48,7 @@ jobs:
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git add resume.html
-          git commit -m 'Update resume contents'
+          git commit -m "Update resume contents from commit $(git rev-parse --short "$GITHUB_SHA")"
           git push
           
 
