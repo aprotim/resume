@@ -5,30 +5,13 @@ jobs@aprotim.com
 
 Employment
 ------------
-### Edgecast - **Senior SRE** - *April 2020 - Present*
-
-Edgecast CDN has a small team of SREs for the entire organization. As such, our teams work focused on where we could act as a
-catalyst to amplify effort across other engineering teams.
-
-#### CDN SRE - *(2020 - Present)*
-- **Promoted SRE Philosophy across org.**
-  - **Evangelized SRE best practices to leadership**, including the value of **error budgets, SLIs/SLOs, consistent tooling**, etc.
-  - **Consulted with service owners to establish SLIs and SLOs.** I helped teams understand the reasoning behind SLIs, what makes
-      a good SLI/SLO, and evaluating the SLIs and SLOs they came up with as we moved the org towards error-budget-driven development.
-  - **Established oncall/escalation best practices.**
-    - **Spearheaded an effort to establish standard escalation practices** across Edgecast. Led meetings with stakeholders (NOC, service teams,
-      leadership, etc. to understand expectations that teams had for themselves and for teams they interacted with, while 
-    - When SRE onboarded the CDN dev team onto a shared oncall rotation, documented the oncall expectations, including response time, expected
-      availability.
-  - **CAB** - TBA
-
 ### Google, Inc. - **Site Reliability Engineer** - *February 2008 - February 2020*
 
 During my tenure as an SRE, I've built and run Google enterprise infrastructure using open source tools on vanilla-ish Linux,
 proprietary third-party platforms, Google's production infrastructure, and Google Cloud Platform; I've carried oncall pagers
 with 5-minute and 30-minute response SLAs; and I've built tools and processes to reduce and automate away toil.
 
-#### Backups Tech Lead - Enterprise Data Storage - *(2017-2020)*
+#### Backups Tech Lead - Enterprise Data Storage - *(2017-Present)*
 - **Designed Google’s next gen internal backup tool** from the ground up.
   - Built on **Google Cloud Platform** to manage provisioning of storage, storage class migration, data retention, authentication/authorization, key escrow, and encryption.
   - Made setup and restore **self-service**, leading to happier users and less toil on the team.
@@ -38,7 +21,7 @@ with 5-minute and 30-minute response SLAs; and I've built tools and processes to
   - **Capture user requirements** by working closely with alpha-/beta-testers to capture pain points, hard requirements, and wishlist features.
   - **Conform to security best practices**, seeking input from security team and building out features as needed to help users avoid security pitfalls.
 
-#### Enterprise Data Storage - Individual Contributor - *(2014 - 2020)*
+#### Enterprise Data Storage - Individual Contributor - *(2014 - Present)*
 - **Migrated XX,000 long-term storage images** from deprecated tape system onto cloud storage, including integrity checking and modifying our backups management software.
 - Worked on tooling to **manage a fleet of several hundred NetApp filers, providing more SRE-like control planes**. *(We needed cattle, NetApp designed pets.)*
 
