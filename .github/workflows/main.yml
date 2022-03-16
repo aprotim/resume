@@ -36,6 +36,6 @@ jobs:  # This workflow contains a single job called "build"
         run: ls . */
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: ./marked/bin/marked -i ./main/resume.md
+        run: ./marked/bin/marked -i ./main/content.md
 
  
