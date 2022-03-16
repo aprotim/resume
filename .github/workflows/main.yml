@@ -3,8 +3,14 @@ name: CI
 on:
   push:
     branches: [ master ]
+    paths:
+      - content.md
+      - template.html
   pull_request:
     branches: [ master ]
+      - content.md
+      - template.html
+
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
