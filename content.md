@@ -5,6 +5,23 @@ jobs@aprotim.com
 
 Employment
 ------------
+### Edgecast - **Senior SRE** - *April 2020 - Present*
+
+Edgecast CDN has a small team of SREs for the entire organization. As such, our teams work focused on where we could act as a
+catalyst to amplify effort across other engineering teams.
+
+#### CDN SRE - *(2020 - Present)*
+- **Promoted SRE Philosophy across org.**
+  - **Evangelized SRE best practices to leadership**, including the value of **error budgets, SLIs/SLOs, consistent tooling**, etc.
+  - **Consulted with service owners to establish SLIs and SLOs.** I helped teams understand the reasoning behind SLIs, what makes
+      a good SLI/SLO, and evaluating the SLIs and SLOs they came up with as we moved the org towards error-budget-driven development.
+  - **Established oncall/escalation best practices.**
+    - **Spearheaded an effort to establish standard escalation practices** across Edgecast. Led meetings with stakeholders (NOC, service teams,
+      leadership, etc. to understand expectations that teams had for themselves and for teams they interacted with, while 
+    - When SRE onboarded the CDN dev team onto a shared oncall rotation, documented the oncall expectations, including response time, expected
+      availability.
+  - **CAB** - TBA
+
 ### Google, Inc. - **Site Reliability Engineer** - *February 2008 - February 2020*
 
 During my tenure as an SRE, I've built and run Google enterprise infrastructure using open source tools on vanilla-ish Linux,
