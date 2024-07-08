@@ -39,6 +39,7 @@
                 --bold-color: var(--base03);
                 --bolder-color: var(--base03);
                 --boldest-color: var(--base03);
+                --base-font-size: 10pt;
         }
 
 
@@ -56,6 +57,7 @@
                 --bold-color: var(--base01);
                 --bolder-color: var(--base02);
                 --boldest-color: var(--base03);
+                --base-font-size: 13pt;
         }
         .dark {
                 --bgcolor: var(--base03);
@@ -67,8 +69,8 @@
                 --boldest-color: var(--base3);
         }
         body {
-                max-width: 432pt;
-                min-width: 186pt;
+                max-width: 70em;
+                min-width: 40em;
                 padding: 26pt 45pt;
                 margin: auto;
         }
@@ -117,8 +119,10 @@
         color: var(--bolder-color);
       }
       body {
+        font-size: var(--base-font-size);
+      }
+      body {
         color: var(--bold-color);
-        font-size: 10pt;
         font-family: 'Source Sans 3', sans-serif;
         font-style: normal;
         background-color: var(--bgcolor);
@@ -139,26 +143,26 @@
       }
       h2 {
         color: var(--orange);
-        font-size: 16pt;
+        font-size: calc(1.6 * var(--base-font-size));
         border-bottom: solid 1px var(--bolder-color);
         background-color: var(--bg-highlights);
       }
       h3 {
         color: var(--boldest-color);
-        font-size: 12pt;
+        font-size: calc(1.2 * var(--base-font-size));
       }
       h4 {
         color: var(--bolder-color);
-        font-size: 10pt;
+        font-size: var(--base-font-size);
       }
       h5 {
         color: var(--bold-color);
-        font-size: 10pt;
+        font-size: var(--base-font-size);
         font-style: italic;
       }
       h6 {
         color: var(--secondary-color);
-        font-size: 10pt;
+        font-size: var(--base-font-size);
       }
       ol,ul {
         margin: 0;
@@ -184,7 +188,7 @@
         padding-top: 0pt;
         color: var(--blue);
         font-weight: 700;
-        font-size: 18pt;
+        font-size: 22pt;
         padding-bottom: 10pt;
         line-height: 1.0;
         text-align: left;
@@ -196,7 +200,8 @@
         line-height: 1.15;
       }
       p {
-        margin: 0;
+        margin: 0.5em 0;
+        line-height:1.0;
       }
       
       #color_toggle_text::before {
