@@ -5,22 +5,28 @@ jobs@aprotim.com
 
 Employment
 ------------
-### Edgecast - **Senior SRE** - *April 2020 - Present*
+### Edgecast - **Principal Software Engineer, SRE** - *April 2020 - July 2022*
 
-Edgecast CDN has a small team of SREs for the entire organization. As such, our teams work focused on where we could act as a
+As a member of small team of SREs for the entire organization, I was responsible for identifying where and how we could act as a
 catalyst to amplify effort across other engineering teams.
 
-#### CDN SRE - *(2020 - Present)*
-- **Promoted SRE Philosophy across org.**
-  - **Evangelized SRE best practices to leadership**, including the value of **error budgets, SLIs/SLOs, consistent tooling**, etc.
-  - **Consulted with service owners to establish SLIs and SLOs.** I helped teams understand the reasoning behind SLIs, what makes
-      a good SLI/SLO, and evaluating the SLIs and SLOs they came up with as we moved the org towards error-budget-driven development.
-  - **Established oncall/escalation best practices.**
-    - **Spearheaded an effort to establish standard escalation practices** across Edgecast. Led meetings with stakeholders (NOC, service teams,
-      leadership, etc. to understand expectations that teams had for themselves and for teams they interacted with, while 
-    - When SRE onboarded the CDN dev team onto a shared oncall rotation, documented the oncall expectations, including response time, expected
-      availability.
-  - **CAB** - TBA
+- **Built organization-wide best practices.** One of my primary responsibilities was to evaluate the existing procedures and tools
+  in use across EdgeCast and make recommendations and tooling to create consistent processes in line with best practices.
+  - **Evangelized SRE best practices to leadership.** Educated senior directors and VPs on the value of **SLIs/SLOs, error budgets,
+    consistent tooling and practices**, etc. to build a better data-driven platform.
+  - **Established SLIs and SLOs across teams.** Upon establishing and convincing leadership of the need for proper SLIs/SLOs, I took
+    on the large task of meeting with service teams across the org to understand their service and dependencies, help teams
+    understand what makes an actionable SLI, and coached team representatives through writing and instrumenting the new SLIs and SLOs.
+    This enabled both the individual teams and the platform as a whole to move towards error-budget-driven development and away from
+    incident-driven emergency maintenance.
+  - **Created and documented escalation best practices for oncall engineers.**
+    - In order to address problems I identfied with differing and
+    undocumented oncall response expectations across teams, I empaneled meetings between various stakeholders (NOC, service owners, leadership) to understand each team's expectations for their own escalations and escalations to other teams. Based on this input I set up example service tiers with **specific SLAs around response time**, definitions for what "response" entailed, and standards for how to publish each team's SLA/escalation procedures so that other teams would know what to expect.
+    - When onboarding the CDN dev team onto the a shared oncall roation with SREs, established and documented specific oncall expectations for that rotation in line with the standards established above.
+- **Provided technical solutions to reliability problems.**
+  - Moved configuration integration testing into its own service, independent from code testing, resulting in a more stable and consistent build/certification pipeline.
+  - **Designed solution for a major reliability problem** which caused single node failures to cause delays and buffering in delivering video and large files. Worked with the CDN Devs to implement this "fast fail" solution that could identify failed nodes quickly and route around them even before they were removed from the working pool.
+
 
 ### Google, Inc. - **Site Reliability Engineer** - *February 2008 - February 2020*
 
