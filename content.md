@@ -18,8 +18,8 @@ As a Principal SRE on an organization-wide task force, I worked cross-functional
          - **Established standard oncall response SLAs and expectations.** Identified operational deficiencies stemming from a lack of organizational standards for oncall response. Worked cross-functionally with stakeholders (NOC, service owners, leadership) to identify and document expectations for response time and escalation procedures. Based on this input, I designed example service tiers with **specific SLAs around response time**, **definitions** for what "response" entailed, and standards for how to publish each team's oncall SLA and escalation procedures where they could be seen by others.
          - When onboarding the main CDN dev team onto a shared rotation with SREs, I documented oncall expectations in line with the standards I created above.
 - **Architected and implemented technical solutions to reliability problems.**
-      - Moved configuration integration testing into its own service, independent from code testing, resulting in a more stable and consistent build/certification pipeline.
-      - **Designed solution for a major reliability problem** in which a single node failures caused delays and buffering across all videos and large files delivered. Worked with the CDN Devs to implement this solution to identify and route around failed nodes even before they were removed from the working pool.
+    - Moved configuration integration testing into its own service, independent from code testing, resulting in a more stable and consistent build/certification pipeline.
+    - **Designed solution for a major reliability problem** in which a single node failures caused delays and buffering across all videos and large files delivered. Worked with the CDN Devs to implement this solution to identify and route around failed nodes even before they were removed from the working pool.
 
 
 ### Google, Inc. - **Site Reliability Engineer** - *February 2008 - February 2020*
