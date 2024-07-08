@@ -39,6 +39,7 @@
                 --bold-color: var(--base03);
                 --bolder-color: var(--base03);
                 --boldest-color: var(--base03);
+                --base-font-size: 10pt;
         }
 
 
@@ -56,6 +57,7 @@
                 --bold-color: var(--base01);
                 --bolder-color: var(--base02);
                 --boldest-color: var(--base03);
+                --base-font-size: 13pt;
         }
         .dark {
                 --bgcolor: var(--base03);
@@ -67,8 +69,8 @@
                 --boldest-color: var(--base3);
         }
         body {
-                max-width: 432pt;
-                min-width: 186pt;
+                max-width: 70em;
+                min-width: 40em;
                 padding: 26pt 45pt;
                 margin: auto;
         }
@@ -117,8 +119,10 @@
         color: var(--bolder-color);
       }
       body {
+        font-size: var(--base-font-size);
+      }
+      body {
         color: var(--bold-color);
-        font-size: 10pt;
         font-family: 'Source Sans 3', sans-serif;
         font-style: normal;
         background-color: var(--bgcolor);
@@ -139,26 +143,26 @@
       }
       h2 {
         color: var(--orange);
-        font-size: 16pt;
+        font-size: calc(1.6 * var(--base-font-size));
         border-bottom: solid 1px var(--bolder-color);
         background-color: var(--bg-highlights);
       }
       h3 {
         color: var(--boldest-color);
-        font-size: 12pt;
+        font-size: calc(1.2 * var(--base-font-size));
       }
       h4 {
         color: var(--bolder-color);
-        font-size: 10pt;
+        font-size: var(--base-font-size);
       }
       h5 {
         color: var(--bold-color);
-        font-size: 10pt;
+        font-size: var(--base-font-size);
         font-style: italic;
       }
       h6 {
         color: var(--secondary-color);
-        font-size: 10pt;
+        font-size: var(--base-font-size);
       }
       ol,ul {
         margin: 0;
@@ -184,7 +188,7 @@
         padding-top: 0pt;
         color: var(--blue);
         font-weight: 700;
-        font-size: 18pt;
+        font-size: calc(1.8 * var(--base-font-size);
         padding-bottom: 10pt;
         line-height: 1.0;
         text-align: left;
@@ -196,7 +200,8 @@
         line-height: 1.15;
       }
       p {
-        margin: 0;
+        margin: 0.5em 0;
+        line-height:1.0;
       }
       
       #color_toggle_text::before {
@@ -245,59 +250,65 @@
   stability and reliability.</p>
   <ul>
     <li>
-      <p><strong>Built organization-wide best practices.</strong>
+      <strong>Built organization-wide best practices.</strong>
       Evaluated existing processes and tooling across EdgeCast,
       recommending and implementing changes in line with industry
-      best practices.</p>
-    </li>
-    <li>
-      <p><strong>Evangelized SRE best practices to
-      leadership.</strong> Educated senior directors and VPs on the
-      value of <strong>SLIs/SLOs, error budgets, consistent tooling
-      and practices</strong>, and other SRE principles to enable
-      strategic decision-making from real reliability and
-      performance data.</p>
-    </li>
-    <li><strong>Established SLIs and SLOs across teams.</strong>
-    Led org-wide initiative across all service teams to understand
-    responsibilities and dependencies, and provide guidance on
-    establishing useful, actionable SLIs and SLOs. Coached teams on
-    writing and instrumenting new SLIs and SLOs in line with these
-    standards. This enabled the platform as a whole to move away
-    from a reactive, incident-driven maintenance model towards
-    proactive, error-budget-driven development.</li>
-    <li>
-      <strong>Created and documented escalation best practices for
-      oncall engineers.</strong>
+      best practices.
       <ul>
-        <li><strong>Established standard oncall response SLAs and
-        expectations.</strong> Identified operational deficiencies
-        stemming from a lack of organizational standards for oncall
-        response. Worked cross-functionally with stakeholders (NOC,
-        service owners, leadership) to identify and document
-        expectations for response time and escalation procedures.
-        Based on this input, I designed example service tiers with
-        <strong>specific SLAs around response time</strong>,
-        <strong>definitions</strong> for what "response" entailed,
-        and standards for how to publish each team's oncall SLA and
-        escalation procedures where they could be seen by
-        others.</li>
-        <li>When onboarding the main CDN dev team onto a shared
-        rotation with SREs, I documented oncall expectations in
-        line with the standards I created above.</li>
+        <li><strong>Evangelized SRE best practices to
+        leadership.</strong> Educated senior directors and VPs on
+        the value of <strong>SLIs/SLOs, error budgets, consistent
+        tooling and practices</strong>, and other SRE principles to
+        enable strategic decision-making from real reliability and
+        performance data.</li>
+        <li><strong>Established SLIs and SLOs across
+        teams.</strong> Led org-wide initiative across all service
+        teams to understand responsibilities and dependencies, and
+        provide guidance on establishing useful, actionable SLIs
+        and SLOs. Coached teams on writing and instrumenting new
+        SLIs and SLOs in line with these standards. This enabled
+        the platform as a whole to move away from a reactive,
+        incident-driven maintenance model towards proactive,
+        error-budget-driven development.</li>
+        <li>
+          <strong>Created and documented escalation best practices
+          for oncall engineers.</strong>
+          <ul>
+            <li><strong>Established standard oncall response SLAs
+            and expectations.</strong> Identified operational
+            deficiencies stemming from a lack of organizational
+            standards for oncall response. Worked
+            cross-functionally with stakeholders (NOC, service
+            owners, leadership) to identify and document
+            expectations for response time and escalation
+            procedures. Based on this input, I designed example
+            service tiers with <strong>specific SLAs around
+            response time</strong>, <strong>definitions</strong>
+            for what "response" entailed, and standards for how to
+            publish each team's oncall SLA and escalation
+            procedures where they could be seen by others.</li>
+            <li>When onboarding the main CDN dev team onto a shared
+            rotation with SREs, I documented oncall expectations in
+            line with the standards I created above.</li>
+          </ul>
+        </li>
       </ul>
     </li>
-    <li><strong>Architected and implemented technical solutions to
-    reliability problems.</strong></li>
-    <li>Moved configuration integration testing into its own
-    service, independent from code testing, resulting in a more
-    stable and consistent build/certification pipeline.</li>
-    <li><strong>Designed solution for a major reliability
-    problem</strong> in which a single node failures caused delays
-    and buffering across all videos and large files delivered.
-    Worked with the CDN Devs to implement this solution to identify
-    and route around failed nodes even before they were removed
-    from the working pool.</li>
+    <li>
+      <strong>Architected and implemented technical solutions to
+      reliability problems.</strong>
+      <ul>
+        <li>Moved configuration integration testing into its own
+        service, independent from code testing, resulting in a more
+        stable and consistent build/certification pipeline.</li>
+        <li><strong>Designed solution for a major reliability
+        problem</strong> in which a single node failures caused
+        delays and buffering across all videos and large files
+        delivered. Worked with the CDN Devs to implement this
+        solution to identify and route around failed nodes even
+        before they were removed from the working pool.</li>
+      </ul>
+    </li>
   </ul>
   <h3>Google, Inc. - <strong>Site Reliability Engineer</strong> -
   <em>February 2008 - February 2020</em></h3>
@@ -311,28 +322,36 @@
   <h4>Backups Tech Lead - Enterprise Data Storage -
   <em>(2017-Present)</em></h4>
   <ul>
-    <li><strong>Designed Google’s next gen internal backup
-    tool</strong> from the ground up.</li>
-    <li>Built on <strong>Google Cloud Platform</strong> to manage
-    provisioning of storage, storage class migration, data
-    retention, authentication/authorization, key escrow, and
-    encryption.</li>
-    <li>Made setup and restore <strong>self-service</strong>,
-    leading to happier users and less toil on the team.</li>
+    <li>
+      <strong>Designed Google’s next gen internal backup
+      tool</strong> from the ground up.
+      <ul>
+        <li>Built on <strong>Google Cloud Platform</strong> to
+        manage provisioning of storage, storage class migration,
+        data retention, authentication/authorization, key escrow,
+        and encryption.</li>
+        <li>Made setup and restore <strong>self-service</strong>,
+        leading to happier users and less toil on the team.</li>
+      </ul>
+    </li>
     <li><strong>Set technical direction</strong> for a team of
     between <strong>2 and 6 engineers</strong> to build, test, and
     roll out our new service.</li>
-    <li><strong>Managed coordination with other teams</strong>
-    to:</li>
-    <li><strong>Push for upstream features</strong> in Google Cloud
-    Storage by speccing requirements, coordinating changes, and
-    finding headcount from internal initiatives.</li>
-    <li><strong>Capture user requirements</strong> by working
-    closely with alpha-/beta-testers to capture pain points, hard
-    requirements, and wishlist features.</li>
-    <li><strong>Conform to security best practices</strong>,
-    seeking input from security team and building out features as
-    needed to help users avoid security pitfalls.</li>
+    <li>
+      <strong>Managed coordination with other teams</strong> to:
+      <ul>
+        <li><strong>Push for upstream features</strong> in Google
+        Cloud Storage by speccing requirements, coordinating
+        changes, and finding headcount from internal
+        initiatives.</li>
+        <li><strong>Capture user requirements</strong> by working
+        closely with alpha-/beta-testers to capture pain points,
+        hard requirements, and wishlist features.</li>
+        <li><strong>Conform to security best practices</strong>,
+        seeking input from security team and building out features
+        as needed to help users avoid security pitfalls.</li>
+      </ul>
+    </li>
   </ul>
   <h4>Enterprise Data Storage - Individual Contributor - <em>(2014
   - Present)</em></h4>
@@ -371,13 +390,17 @@
   <h4>Google Apps for Your Domain (Now Google Workplace)
   Administrator Lead for google.com - <em>(2008 - 2010)</em></h4>
   <ul>
-    <li><strong>Managed all domain-wide policies</strong> for
-    Google's own Workplace domain, including:</li>
-    <li><strong>User status/password sync</strong> from the various
-    systems of record.</li>
-    <li>Populating <strong>IP whitelist by digesting internals
-    network configs</strong>.</li>
-    <li><strong>Group/policy synchronization.</strong></li>
+    <li>
+      <strong>Managed all domain-wide policies</strong> for
+      Google's own Workplace domain, including:
+      <ul>
+        <li><strong>User status/password sync</strong> from the
+        various systems of record.</li>
+        <li>Populating <strong>IP whitelist by digesting internals
+        network configs</strong>.</li>
+        <li><strong>Group/policy synchronization.</strong></li>
+      </ul>
+    </li>
     <li><strong>Set policy for access to former user data</strong>,
     in line with established Google privacy/authorization
     practices.</li>
@@ -474,10 +497,13 @@
     <strong>Bash</strong> (sad, but true)</li>
     <li>Languages (human): <strong>English</strong> (written and
     spoken!)</li>
-    <li>Large-scale system management:</li>
-    <li><strong>Large-Scale System Design</strong></li>
-    <li><strong>Monitoring/alerting</strong></li>
-    <li><strong>Reliable deployment</strong></li>
+    <li>Large-scale system management:
+      <ul>
+        <li><strong>Large-Scale System Design</strong></li>
+        <li><strong>Monitoring/alerting</strong></li>
+        <li><strong>Reliable deployment</strong></li>
+      </ul>
+    </li>
     <li><strong>Linux</strong> system administration</li>
   </ul>
   <h4>Enthusiastic dilettante in:</h4>
