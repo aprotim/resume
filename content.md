@@ -24,9 +24,9 @@ As a Principal SRE on an organization-wide task force, I worked cross-functional
 
 ### Google, Inc. - **Site Reliability Engineer** - *February 2008 - February 2020*
 
-During my tenure as an SRE, I built and ran Google enterprise infrastructure on a range of platforms including using open source tools on Linux, proprietary third-party platforms, Google’s production infrastructure, and Google Cloud Platform. Provided oncall support with 5- and 30-minute response SLAs, and built tooling and processes to streamline operations and automate away toil.
+During my tenure as an SRE, I built and ran Google enterprise infrastructure on a range of platforms including using open source tools on Linux, proprietary third-party platforms, Google’s production infrastructure, and Google Cloud Platform. Provided oncall support and built tooling and processes to streamline operations and automate away toil.
 
-#### Backups Tech Lead - Enterprise Data Storage - *(2017-Present)*
+#### Backups Tech Lead - Enterprise Data Storage - *(2017-2020)*
 - **Designed Google’s next gen internal backup tool** from the ground up.
     - Built on **Google Cloud Platform** to manage provisioning of storage, storage class migration, data retention, authentication/authorization, key escrow, and encryption.
     - Made setup and restore **self-service**, leading to happier users and less toil on the team.
@@ -36,7 +36,7 @@ During my tenure as an SRE, I built and ran Google enterprise infrastructure on 
     - **Capture user requirements** by working closely with alpha-/beta-testers to capture pain points, hard requirements, and wishlist features.
     - **Conform to security best practices**, seeking input from security team and building out features as needed to help users avoid security pitfalls.
 
-#### Enterprise Data Storage - Individual Contributor - *(2014 - Present)*
+#### Enterprise Data Storage - Individual Contributor - *(2014 - 2020)*
 - **Migrated tens of thousands of long-term storage images** from deprecated tape system onto cloud storage, including integrity checking and modifying our backups management software.
 - Worked on tooling to **manage a fleet of several hundred NetApp filers, providing more SRE-like control planes**. *(We needed cattle, NetApp designed pets.)*
 
