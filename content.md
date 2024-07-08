@@ -55,7 +55,8 @@ During my tenure as an SRE, I built and ran Google enterprise infrastructure on 
 - **Set policy for access to former user data**, in line with established Google privacy/authorization practices.
 - **Maintained internal tool for providing delegated, logged administrative access** to internal helpdesk, including managing quota and access to orphaned data.
 - **Met in person with various Workplace product dev teams** (Calendar, Admin Console, Gmail, Docs, etc.) PMs to **provide feedback on missing features and requirements for enterprise** use cases, helping steer roadmaps.
-- Worked with GSuite team to **roll out Google multi-login**, including both managing the google.com domain changes and consulting on requirements for the feature's roll out. Received an **OC Award Honorable Mention**.
+- Worked with GSuite team to **roll out Google multi-login**, including both managing the google.com domain changes and consulting on requirements for the feature's roll out.
+    - Received an **OC Award Honorable Mention** for this work. (The OC Award is most prestigious award within Google, successor to the previous Founders' Award.)
 
 #### Single Sign-On SRE "Tech Lead" (Team of 1) - *(2008 - 2010)*
 - Provided SRE support for Google's in-house SSO system, including monitoring, alerting, and deployment support.
