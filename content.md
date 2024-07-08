@@ -48,14 +48,14 @@ During my tenure as an SRE, I built and ran Google enterprise infrastructure on 
 - Lead on **isolating different customers' monitoring** by sharding workloads from large, shared physical servers onto small VMs, with scheduling based on configured resource constraints.
 - Established **standard system configuration best practices** applied across 500+ servers and all team services.
 
-#### Google Apps for Your Domain (Now GSuite) Administrator Lead for google.com - *(2008 - 2010)*
-- **Managed all domain-wide policies** for Google's own GSuite domain, including:
+#### Google Apps for Your Domain (Now Google Workplace) Administrator Lead for google.com - *(2008 - 2010)*
+- **Managed all domain-wide policies** for Google's own Workplace domain, including:
   - **User status/password sync** from the various systems of record.
   - Populating **IP whitelist by digesting internals network configs**.
   - **Group/policy synchronization.**
 - **Set policy for access to former user data**, in line with established Google privacy/authorization practices.
 - **Maintained internal tool for providing delegated, logged administrative access** to internal helpdesk, including managing quota and access to orphaned data.
-- **Met in person with various GSuite teams** (Calendar, Admin Console, Gmail, Docs, etc.) PMs to **provide feedback on missing features and requirements for enterprise** use cases, helping steer roadmaps.
+- **Met in person with various Workplace product dev teams** (Calendar, Admin Console, Gmail, Docs, etc.) PMs to **provide feedback on missing features and requirements for enterprise** use cases, helping steer roadmaps.
 - Worked with GSuite team to **roll out Google multi-login**, including both managing the google.com domain changes and consulting on requirements for the feature's roll out. Received an **OC Award Honorable Mention**.
 
 #### Single Sign-On SRE "Tech Lead" (Team of 1) - *(2008 - 2010)*
