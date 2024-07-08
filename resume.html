@@ -234,147 +234,332 @@
       "color_toggle_text">Toggle Dark Mode</span></a>
     </div>
   </div><!-- Start Content -->
-<h1 id="aprotim-sanyal">Aprotim Sanyal</h1>
-<p><a href="mailto:&#x6a;&#111;&#x62;&#x73;&#64;&#x61;&#112;&#x72;&#x6f;&#116;&#x69;&#109;&#46;&#99;&#111;&#x6d;">&#x6a;&#111;&#x62;&#x73;&#64;&#x61;&#112;&#x72;&#x6f;&#116;&#x69;&#109;&#46;&#99;&#111;&#x6d;</a><br>(310) 243-6230</p>
-<h2 id="employment">Employment</h2>
-<h3 id="edgecast---principal-software-engineer-sre---april-2020---july-2022">Edgecast - <strong>Principal Software Engineer, SRE</strong> - <em>April 2020 - July 2022</em></h3>
-<p>As a member of small team of SREs for the entire organization, I was responsible for identifying where and how we could act as a
-catalyst to amplify effort across other engineering teams.</p>
-<ul>
-<li><strong>Built organization-wide best practices.</strong> One of my primary responsibilities was to evaluate the existing procedures and tools
-in use across EdgeCast and make recommendations and tooling to create consistent processes in line with best practices.<ul>
-<li><strong>Evangelized SRE best practices to leadership.</strong> Educated senior directors and VPs on the value of <strong>SLIs/SLOs, error budgets,
-consistent tooling and practices</strong>, etc. to build a better data-driven platform.</li>
-<li><strong>Established SLIs and SLOs across teams.</strong> Upon establishing and convincing leadership of the need for proper SLIs/SLOs, I took
-on the large task of meeting with service teams across the org to understand their service and dependencies, help teams
-understand what makes an actionable SLI, and coached team representatives through writing and instrumenting the new SLIs and SLOs.
-This enabled both the individual teams and the platform as a whole to move towards error-budget-driven development and away from
-incident-driven emergency maintenance.</li>
-<li><strong>Created and documented escalation best practices for oncall engineers.</strong><ul>
-<li>In order to address problems I identfied with differing and
-undocumented oncall response expectations across teams, I empaneled meetings between various stakeholders (NOC, service owners, leadership) to understand each team&#39;s expectations for their own escalations and escalations to other teams. Based on this input I set up example service tiers with <strong>specific SLAs around response time</strong>, definitions for what &quot;response&quot; entailed, and standards for how to publish each team&#39;s SLA/escalation procedures so that other teams would know what to expect.</li>
-<li>When onboarding the CDN dev team onto the a shared oncall roation with SREs, established and documented specific oncall expectations for that rotation in line with the standards established above.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>Provided technical solutions to reliability problems.</strong><ul>
-<li>Moved configuration integration testing into its own service, independent from code testing, resulting in a more stable and consistent build/certification pipeline.</li>
-<li><strong>Designed solution for a major reliability problem</strong> which caused single node failures to cause delays and buffering in delivering video and large files. Worked with the CDN Devs to implement this &quot;fast fail&quot; solution that could identify failed nodes quickly and route around them even before they were removed from the working pool.</li>
-</ul>
-</li>
-</ul>
-<h3 id="google-inc---site-reliability-engineer---february-2008---february-2020">Google, Inc. - <strong>Site Reliability Engineer</strong> - <em>February 2008 - February 2020</em></h3>
-<p>During my tenure as an SRE, I&#39;ve built and run Google enterprise infrastructure using open source tools on vanilla-ish Linux,
-proprietary third-party platforms, Google&#39;s production infrastructure, and Google Cloud Platform; I&#39;ve carried oncall pagers
-with 5-minute and 30-minute response SLAs; and I&#39;ve built tools and processes to reduce and automate away toil.</p>
-<h4 id="backups-tech-lead---enterprise-data-storage---2017-present">Backups Tech Lead - Enterprise Data Storage - <em>(2017-Present)</em></h4>
-<ul>
-<li><strong>Designed Google’s next gen internal backup tool</strong> from the ground up.<ul>
-<li>Built on <strong>Google Cloud Platform</strong> to manage provisioning of storage, storage class migration, data retention, authentication/authorization, key escrow, and encryption.</li>
-<li>Made setup and restore <strong>self-service</strong>, leading to happier users and less toil on the team.</li>
-</ul>
-</li>
-<li><strong>Set technical direction</strong> for a team of between <strong>2 and 6 engineers</strong> to build, test, and roll out our new service.</li>
-<li><strong>Managed coordination with other teams</strong> to:<ul>
-<li><strong>Push for upstream features</strong> in Google Cloud Storage by speccing requirements, coordinating changes, and finding headcount from internal initiatives.</li>
-<li><strong>Capture user requirements</strong> by working closely with alpha-/beta-testers to capture pain points, hard requirements, and wishlist features.</li>
-<li><strong>Conform to security best practices</strong>, seeking input from security team and building out features as needed to help users avoid security pitfalls.</li>
-</ul>
-</li>
-</ul>
-<h4 id="enterprise-data-storage---individual-contributor---2014---present">Enterprise Data Storage - Individual Contributor - <em>(2014 - Present)</em></h4>
-<ul>
-<li><strong>Migrated XX,000 long-term storage images</strong> from deprecated tape system onto cloud storage, including integrity checking and modifying our backups management software.</li>
-<li>Worked on tooling to <strong>manage a fleet of several hundred NetApp filers, providing more SRE-like control planes</strong>. <em>(We needed cattle, NetApp designed pets.)</em></li>
-</ul>
-<h4 id="enterprise-monitoring---individual-contributor---2010---2014">Enterprise Monitoring - Individual Contributor - <em>(2010 - 2014)</em></h4>
-<ul>
-<li><strong>Managed monitoring infrastructure</strong> for Google’s internal (“corp”) systems. (As a hard dependency of critical infrastructure our availability SLOs had to be greater than any dependent system like DNS, DHCP, auth, etc.)</li>
-<li><strong>Adapted tooling designed for the Google production stack</strong> to run on standard Linux servers both in data centers and offices.</li>
-<li><strong>Replaced previous, high-toil on-prem system management</strong> with automatic workload scheduling. <em>(Think proto-containerization with Linux VMs and specialized workloads.)</em></li>
-<li>Lead on <strong>isolating different customers&#39; monitoring</strong> by sharding workloads from large, shared physical servers onto small VMs, with scheduling based on configured resource constraints.</li>
-<li>Established <strong>standard system configuration best practices</strong> applied across 500+ servers and all team services.</li>
-</ul>
-<h4 id="google-apps-for-your-domain-now-gsuite-administrator-lead-for-googlecom---2008---2010">Google Apps for Your Domain (Now GSuite) Administrator Lead for google.com - <em>(2008 - 2010)</em></h4>
-<ul>
-<li><strong>Managed all domain-wide policies</strong> for Google&#39;s own GSuite domain, including:<ul>
-<li><strong>User status/password sync</strong> from the various systems of record.</li>
-<li>Populating <strong>IP whitelist by digesting internals network configs</strong>.</li>
-<li><strong>Group/policy synchronization.</strong></li>
-</ul>
-</li>
-<li><strong>Set policy for access to former user data</strong>, in line with established Google privacy/authorization practices.</li>
-<li><strong>Maintained internal tool for providing delegated, logged administrative access</strong> to internal helpdesk, including managing quota and access to orphaned data.</li>
-<li><strong>Met in person with various GSuite teams</strong> (Calendar, Admin Console, Gmail, Docs, etc.) PMs to <strong>provide feedback on missing features and requirements for enterprise</strong> use cases, helping steer roadmaps.</li>
-<li>Worked with GSuite team to <strong>roll out Google multi-login</strong>, including both managing the google.com domain changes and consulting on requirements for the feature&#39;s roll out. Received an <strong>OC Award Honorable Mention</strong>.</li>
-</ul>
-<h4 id="single-sign-on-sre-tech-lead-team-of-1---2008---2010">Single Sign-On SRE &quot;Tech Lead&quot; (Team of 1) - <em>(2008 - 2010)</em></h4>
-<ul>
-<li>Provided SRE support for Google&#39;s in-house SSO system, including monitoring, alerting, and deployment support.</li>
-</ul>
-<h3 id="google-inc---sysops-intern---june-2006---august-2006">Google Inc. - <strong>Sysops Intern</strong> - <em>June 2006 - August 2006</em></h3>
-<ul>
-<li><strong>Migrated Googler Calendars from Oracle Calendar to Google Calendar</strong><ul>
-<li>In advance of Google&#39;s initial release of Google Calendar for enterprise and to aid with internal dogfooding, I wrote all the tools to export all employee calendar data from Oracle Calendar and import it into Google Calendar.</li>
-</ul>
-</li>
-<li><strong>Global logs visualization</strong><ul>
-<li>Used a combination of Sawzall and Python to analyze and geolocate logs data from internal infrastructure and visualize the magnitude of internal traffic onto Google Earth using dynamically rendered KML.</li>
-</ul>
-</li>
-</ul>
-<h2 id="volunteeringservice">Volunteering/Service</h2>
-<h3 id="cssigoogle-lax">CSSI@Google LAX</h3>
-<p><a href="https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/">CSSI</a> is a three-week intensive programming course for rising college freshman, primarily from groups underrepresented in tech. It culminates in students designing, implementing, and building their own web app.</p>
-<h4 id="co-lead-instructor---summer-2018-and-2019">Co-Lead Instructor - Summer 2018 and 2019</h4>
-<ul>
-<li><strong>Ran Google L.A.&#39;s CSSI instruction</strong> for two summers, along with my co-lead.<ul>
-<li><strong>Planned and delivered lessons</strong> including Python lessons, ad hoc breakout sessions, and custom labs as well as life skills like growth mindset, protocols for problem solving.</li>
-<li><strong>Recruited diverse team of module instructors/TAs</strong> from the office, so that the students would see themselves reflected in their instructors.</li>
-<li><strong>Led instructional/pedagogical training</strong> for module instructors and TAs.</li>
-<li>Provided <strong>personalized mentorship</strong> to students.</li>
-</ul>
-</li>
-<li>Received <strong>4.9/5.0 instructor rating</strong> from students end-of-program survey, as well as the <strong>Google LAX Citizenship Award</strong> and <strong>Google Connect Impact Award</strong>.</li>
-<li>In 2019, <strong>91% of students reported increased sense of belonging</strong> in the field, and <strong>85% said the program helped prepare them for college</strong>.</li>
-</ul>
-<h4 id="python-module-instructor---summer-2017">Python Module Instructor - Summer 2017</h4>
-<ul>
-<li><strong>Planned and taught</strong> two full-day (9am-6pm) lessons on Python to the students, as well TAing frequently.</li>
-</ul>
-<h2 id="skills">Skills</h2>
-<h4 id="expert-in">Expert in:</h4>
-<ul>
-<li>Languages (computer): <strong>Python</strong>, <strong>Bash</strong> (sad, but true)</li>
-<li>Languages (human): <strong>English</strong> (written and spoken!)</li>
-<li>Large-scale system management:<ul>
-<li><strong>Large-Scale System Design</strong></li>
-<li><strong>Monitoring/alerting</strong></li>
-<li><strong>Reliable deployment</strong></li>
-</ul>
-</li>
-<li><strong>Linux</strong> system administration</li>
-</ul>
-<h4 id="enthusiastic-dilettante-in">Enthusiastic dilettante in:</h4>
-<ul>
-<li>Languages (computer): <strong>JavaScript/ECMAScript</strong>, <strong>Node.js</strong>, <strong>Go</strong></li>
-<li>Languages (human): <strong>Spanish</strong></li>
-<li><strong>Teaching</strong> peers and young students.</li>
-</ul>
-<h4 id="its-been-a-while-but-i-could-pick-it-back-up">It’s been a while, but I could pick it back up:</h4>
-<ul>
-<li>Languages (computer): <strong>C</strong>, <strong>C++</strong>, <strong>Java</strong>, <strong>Ruby</strong> (on or off Rails), <strong>Perl</strong>, <strong>Lisp</strong></li>
-<li>Languages (human): <strong>French</strong>, <strong>Hindi</strong>, <strong>Bengali</strong></li>
-</ul>
-<h2 id="education">Education</h2>
-<h3 id="university-of-virginia-dept-of-computer-science">University of Virginia, Dept of Computer Science</h3>
-<h4 id="mcs-in-computer-science---jan-2008">M.Cs. in Computer Science - Jan 2008</h4>
-<p>Thesis project: <strong>“Color CT: Capturing Energy Dependence in CT Scans”</strong><br>Publications: Williams, Daniel, et al. <strong>&quot;A cross-layer approach to heterogeneity and reliability.&quot;</strong> <em>Proceedings of the 7th IEEE/ACM international conference on Formal Methods and Models for Codesign.</em> IEEE Press, 2009.</p>
-<h3 id="university-of-virginia-school-of-engineering--applied-science">University of Virginia, School of Engineering &amp; Applied Science</h3>
-<h4 id="bs-with-honors-in-computer-science---may-2005-also-completed-requirements-for-ba-in-cognitive-science">B.S. with Honors in Computer Science - May 2005<br/> Also completed requirements for B.A. in Cognitive Science</h4>
-<p>Thesis: <strong>“NJTopol: Adding Topology to Parallelized Neural Simulation”</strong><br>Publications: Levy, William B., et al. <strong>&quot;The formation of neural codes in the hippocampus: trace conditioning as a prototypical paradigm for studying the random recoding hypothesis.&quot;</strong> <em>Biological cybernetics</em> 92.6 (2005): 409-426.</p>
-<!-- End Content -->
+  <h1 id="aprotim-sanyal">Aprotim Sanyal</h1>
+  <p><a href="mailto:jobs@aprotim.com">jobs@aprotim.com</a><br>
+  (310) 243-6230</p>
+  <h2 id="employment">Employment</h2>
+  <h3 id=
+  "edgecast-principal-software-engineer-sre-april-2020-july-2022">
+  Edgecast - <strong>Principal Software Engineer, SRE</strong> -
+  <em>April 2020 - July 2022</em></h3>
+  <p>As a member of small team of SREs for the entire organization,
+  I was responsible for identifying where and how we could act as a
+  catalyst to amplify effort across other engineering teams.</p>
+  <ul>
+    <li>
+      <strong>Built organization-wide best practices.</strong> One
+      of my primary responsibilities was to evaluate the existing
+      procedures and tools in use across EdgeCast and make
+      recommendations and tooling to create consistent processes in
+      line with best practices.
+      <ul>
+        <li><strong>Evangelized SRE best practices to
+        leadership.</strong> Educated senior directors and VPs on
+        the value of <strong>SLIs/SLOs, error budgets, consistent
+        tooling and practices</strong>, etc. to build a better
+        data-driven platform.</li>
+        <li><strong>Established SLIs and SLOs across
+        teams.</strong> Upon establishing and convincing leadership
+        of the need for proper SLIs/SLOs, I took on the large task
+        of meeting with service teams across the org to understand
+        their service and dependencies, help teams understand what
+        makes an actionable SLI, and coached team representatives
+        through writing and instrumenting the new SLIs and SLOs.
+        This enabled both the individual teams and the platform as
+        a whole to move towards error-budget-driven development and
+        away from incident-driven emergency maintenance.</li>
+        <li>
+          <strong>Created and documented escalation best practices
+          for oncall engineers.</strong>
+          <ul>
+            <li>In order to address problems I identfied with
+            differing and undocumented oncall response expectations
+            across teams, I empaneled meetings between various
+            stakeholders (NOC, service owners, leadership) to
+            understand each team's expectations for their own
+            escalations and escalations to other teams. Based on
+            this input I set up example service tiers with
+            <strong>specific SLAs around response time</strong>,
+            definitions for what "response" entailed, and standards
+            for how to publish each team's SLA/escalation
+            procedures so that other teams would know what to
+            expect.</li>
+            <li>When onboarding the CDN dev team onto the a shared
+            oncall roation with SREs, established and documented
+            specific oncall expectations for that rotation in line
+            with the standards established above.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Provided technical solutions to reliability
+      problems.</strong>
+      <ul>
+        <li>Moved configuration integration testing into its own
+        service, independent from code testing, resulting in a more
+        stable and consistent build/certification pipeline.</li>
+        <li><strong>Designed solution for a major reliability
+        problem</strong> which caused single node failures to cause
+        delays and buffering in delivering video and large files.
+        Worked with the CDN Devs to implement this "fast fail"
+        solution that could identify failed nodes quickly and route
+        around them even before they were removed from the working
+        pool.</li>
+      </ul>
+    </li>
+  </ul>
+  <h3 id=
+  "google-inc-site-reliability-engineer-february-2008-february-2020">
+  Google, Inc. - <strong>Site Reliability Engineer</strong> -
+  <em>February 2008 - February 2020</em></h3>
+  <p>During my tenure as an SRE, I've built and run Google
+  enterprise infrastructure using open source tools on vanilla-ish
+  Linux, proprietary third-party platforms, Google's production
+  infrastructure, and Google Cloud Platform; I've carried oncall
+  pagers with 5-minute and 30-minute response SLAs; and I've built
+  tools and processes to reduce and automate away toil.</p>
+  <h4 id="backups-tech-lead-enterprise-data-storage-2017-present-">
+  Backups Tech Lead - Enterprise Data Storage -
+  <em>(2017-Present)</em></h4>
+  <ul>
+    <li>
+      <strong>Designed Google’s next gen internal backup
+      tool</strong> from the ground up.
+      <ul>
+        <li>Built on <strong>Google Cloud Platform</strong> to
+        manage provisioning of storage, storage class migration,
+        data retention, authentication/authorization, key escrow,
+        and encryption.</li>
+        <li>Made setup and restore <strong>self-service</strong>,
+        leading to happier users and less toil on the team.</li>
+      </ul>
+    </li>
+    <li><strong>Set technical direction</strong> for a team of
+    between <strong>2 and 6 engineers</strong> to build, test, and
+    roll out our new service.</li>
+    <li>
+      <strong>Managed coordination with other teams</strong> to:
+      <ul>
+        <li><strong>Push for upstream features</strong> in Google
+        Cloud Storage by speccing requirements, coordinating
+        changes, and finding headcount from internal
+        initiatives.</li>
+        <li><strong>Capture user requirements</strong> by working
+        closely with alpha-/beta-testers to capture pain points,
+        hard requirements, and wishlist features.</li>
+        <li><strong>Conform to security best practices</strong>,
+        seeking input from security team and building out features
+        as needed to help users avoid security pitfalls.</li>
+      </ul>
+    </li>
+  </ul>
+  <h4 id=
+  "enterprise-data-storage-individual-contributor-2014-present-">
+  Enterprise Data Storage - Individual Contributor - <em>(2014 -
+  Present)</em></h4>
+  <ul>
+    <li><strong>Migrated XX,000 long-term storage images</strong>
+    from deprecated tape system onto cloud storage, including
+    integrity checking and modifying our backups management
+    software.</li>
+    <li>Worked on tooling to <strong>manage a fleet of several
+    hundred NetApp filers, providing more SRE-like control
+    planes</strong>. <em>(We needed cattle, NetApp designed
+    pets.)</em></li>
+  </ul>
+  <h4 id="enterprise-monitoring-individual-contributor-2010-2014-">
+  Enterprise Monitoring - Individual Contributor - <em>(2010 -
+  2014)</em></h4>
+  <ul>
+    <li><strong>Managed monitoring infrastructure</strong> for
+    Google’s internal (“corp”) systems. (As a hard dependency of
+    critical infrastructure our availability SLOs had to be greater
+    than any dependent system like DNS, DHCP, auth, etc.)</li>
+    <li><strong>Adapted tooling designed for the Google production
+    stack</strong> to run on standard Linux servers both in data
+    centers and offices.</li>
+    <li><strong>Replaced previous, high-toil on-prem system
+    management</strong> with automatic workload scheduling.
+    <em>(Think proto-containerization with Linux VMs and
+    specialized workloads.)</em></li>
+    <li>Lead on <strong>isolating different customers'
+    monitoring</strong> by sharding workloads from large, shared
+    physical servers onto small VMs, with scheduling based on
+    configured resource constraints.</li>
+    <li>Established <strong>standard system configuration best
+    practices</strong> applied across 500+ servers and all team
+    services.</li>
+  </ul>
+  <h4 id=
+  "google-apps-for-your-domain-now-gsuite-administrator-lead-for-google-com-2008-2010-">
+  Google Apps for Your Domain (Now GSuite) Administrator Lead for
+  google.com - <em>(2008 - 2010)</em></h4>
+  <ul>
+    <li>
+      <strong>Managed all domain-wide policies</strong> for
+      Google's own GSuite domain, including:
+      <ul>
+        <li><strong>User status/password sync</strong> from the
+        various systems of record.</li>
+        <li>Populating <strong>IP whitelist by digesting internals
+        network configs</strong>.</li>
+        <li><strong>Group/policy synchronization.</strong></li>
+      </ul>
+    </li>
+    <li><strong>Set policy for access to former user data</strong>,
+    in line with established Google privacy/authorization
+    practices.</li>
+    <li><strong>Maintained internal tool for providing delegated,
+    logged administrative access</strong> to internal helpdesk,
+    including managing quota and access to orphaned data.</li>
+    <li><strong>Met in person with various GSuite teams</strong>
+    (Calendar, Admin Console, Gmail, Docs, etc.) PMs to
+    <strong>provide feedback on missing features and requirements
+    for enterprise</strong> use cases, helping steer roadmaps.</li>
+    <li>Worked with GSuite team to <strong>roll out Google
+    multi-login</strong>, including both managing the google.com
+    domain changes and consulting on requirements for the feature's
+    roll out. Received an <strong>OC Award Honorable
+    Mention</strong>.</li>
+  </ul>
+  <h4 id="single-sign-on-sre-tech-lead-team-of-1-2008-2010-">Single
+  Sign-On SRE "Tech Lead" (Team of 1) - <em>(2008 - 2010)</em></h4>
+  <ul>
+    <li>Provided SRE support for Google's in-house SSO system,
+    including monitoring, alerting, and deployment support.</li>
+  </ul>
+  <h3 id="google-inc-sysops-intern-june-2006-august-2006">Google
+  Inc. - <strong>Sysops Intern</strong> - <em>June 2006 - August
+  2006</em></h3>
+  <ul>
+    <li>
+      <strong>Migrated Googler Calendars from Oracle Calendar to
+      Google Calendar</strong>
+      <ul>
+        <li>In advance of Google's initial release of Google
+        Calendar for enterprise and to aid with internal
+        dogfooding, I wrote all the tools to export all employee
+        calendar data from Oracle Calendar and import it into
+        Google Calendar.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Global logs visualization</strong>
+      <ul>
+        <li>Used a combination of Sawzall and Python to analyze and
+        geolocate logs data from internal infrastructure and
+        visualize the magnitude of internal traffic onto Google
+        Earth using dynamically rendered KML.</li>
+      </ul>
+    </li>
+  </ul>
+  <h2 id="volunteering-service">Volunteering/Service</h2>
+  <h3 id="cssi-google-lax">CSSI@Google LAX</h3>
+  <p><a href=
+  "https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute/">
+  CSSI</a> is a three-week intensive programming course for rising
+  college freshman, primarily from groups underrepresented in tech.
+  It culminates in students designing, implementing, and building
+  their own web app.</p>
+  <h4 id="co-lead-instructor-summer-2018-and-2019">Co-Lead
+  Instructor - Summer 2018 and 2019</h4>
+  <ul>
+    <li>
+      <strong>Ran Google L.A.'s CSSI instruction</strong> for two
+      summers, along with my co-lead.
+      <ul>
+        <li><strong>Planned and delivered lessons</strong>
+        including Python lessons, ad hoc breakout sessions, and
+        custom labs as well as life skills like growth mindset,
+        protocols for problem solving.</li>
+        <li><strong>Recruited diverse team of module
+        instructors/TAs</strong> from the office, so that the
+        students would see themselves reflected in their
+        instructors.</li>
+        <li><strong>Led instructional/pedagogical training</strong>
+        for module instructors and TAs.</li>
+        <li>Provided <strong>personalized mentorship</strong> to
+        students.</li>
+      </ul>
+    </li>
+    <li>Received <strong>4.9/5.0 instructor rating</strong> from
+    students end-of-program survey, as well as the <strong>Google
+    LAX Citizenship Award</strong> and <strong>Google Connect
+    Impact Award</strong>.</li>
+    <li>In 2019, <strong>91% of students reported increased sense
+    of belonging</strong> in the field, and <strong>85% said the
+    program helped prepare them for college</strong>.</li>
+  </ul>
+  <h4 id="python-module-instructor-summer-2017">Python Module
+  Instructor - Summer 2017</h4>
+  <ul>
+    <li><strong>Planned and taught</strong> two full-day (9am-6pm)
+    lessons on Python to the students, as well TAing
+    frequently.</li>
+  </ul>
+  <h2 id="skills">Skills</h2>
+  <h4 id="expert-in-">Expert in:</h4>
+  <ul>
+    <li>Languages (computer): <strong>Python</strong>,
+    <strong>Bash</strong> (sad, but true)</li>
+    <li>Languages (human): <strong>English</strong> (written and
+    spoken!)</li>
+    <li>Large-scale system management:
+      <ul>
+        <li><strong>Large-Scale System Design</strong></li>
+        <li><strong>Monitoring/alerting</strong></li>
+        <li><strong>Reliable deployment</strong></li>
+      </ul>
+    </li>
+    <li><strong>Linux</strong> system administration</li>
+  </ul>
+  <h4 id="enthusiastic-dilettante-in-">Enthusiastic dilettante
+  in:</h4>
+  <ul>
+    <li>Languages (computer):
+    <strong>JavaScript/ECMAScript</strong>,
+    <strong>Node.js</strong>, <strong>Go</strong></li>
+    <li>Languages (human): <strong>Spanish</strong></li>
+    <li><strong>Teaching</strong> peers and young students.</li>
+  </ul>
+  <h4 id="it-s-been-a-while-but-i-could-pick-it-back-up-">It’s been
+  a while, but I could pick it back up:</h4>
+  <ul>
+    <li>Languages (computer): <strong>C</strong>,
+    <strong>C++</strong>, <strong>Java</strong>,
+    <strong>Ruby</strong> (on or off Rails), <strong>Perl</strong>,
+    <strong>Lisp</strong></li>
+    <li>Languages (human): <strong>French</strong>,
+    <strong>Hindi</strong>, <strong>Bengali</strong></li>
+  </ul>
+  <h2 id="education">Education</h2>
+  <h3 id="university-of-virginia-dept-of-computer-science">
+  University of Virginia, Dept of Computer Science</h3>
+  <h4 id="m-cs-in-computer-science-jan-2008">M.Cs. in Computer
+  Science - Jan 2008</h4>
+  <p>Thesis project: <strong>“Color CT: Capturing Energy Dependence
+  in CT Scans”</strong><br>
+  Publications: Williams, Daniel, et al. <strong>"A cross-layer
+  approach to heterogeneity and reliability."</strong>
+  <em>Proceedings of the 7th IEEE/ACM international conference on
+  Formal Methods and Models for Codesign.</em> IEEE Press,
+  2009.</p>
+  <h3 id=
+  "university-of-virginia-school-of-engineering-applied-science">
+  University of Virginia, School of Engineering & Applied
+  Science</h3>
+  <h4 id=
+  "b-s-with-honors-in-computer-science-may-2005-br-also-completed-requirements-for-b-a-in-cognitive-science">
+  B.S. with Honors in Computer Science - May 2005<br>
+  Also completed requirements for B.A. in Cognitive Science</h4>
+  <p>Thesis: <strong>“NJTopol: Adding Topology to Parallelized
+  Neural Simulation”</strong><br>
+  Publications: Levy, William B., et al. <strong>"The formation of
+  neural codes in the hippocampus: trace conditioning as a
+  prototypical paradigm for studying the random recoding
+  hypothesis."</strong> <em>Biological cybernetics</em> 92.6
+  (2005): 409-426.</p><!-- End Content -->
   <script>
     let body = document.getElementsByTagName('body')[0];
     if (window.matchMedia("screen and (prefers-color-scheme: dark)").matches) {
