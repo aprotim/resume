@@ -123,3 +123,4 @@ Publications: Williams, Daniel, et al. **"A cross-layer approach to heterogeneit
 #### B.S. with Honors in Computer Science - May 2005<br/> Also completed requirements for B.A. in Cognitive Science
 Thesis: **“NJTopol: Adding Topology to Parallelized Neural Simulation”**  
 Publications: Levy, William B., et al. **"The formation of neural codes in the hippocampus: trace conditioning as a prototypical paradigm for studying the random recoding hypothesis."** *Biological cybernetics* 92.6 (2005): 409-426.
+
